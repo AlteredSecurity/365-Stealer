@@ -106,16 +106,13 @@ Follow the below mentioned steps to register an application in Azure
 1. Clone 365-Stealer from [https://github.com/AlteredSecurity/365-Stealer](https://github.com/AlteredSecurity/365-Stealer)
 
 > git clone https://github.com/AlteredSecurity/365-Stealer.git
-
 2. Save the extracted in `C:\xampp\htdocs\` or at any location that can help us to host the PHP application and run Python.
 
 3. Install the required application 
 > Python3
 > PHP CLI or Xampp server
-
 4. Install the required python modules
 > pip install -r requirements.txt 
-
 ### Enable sqlite3 in apache server
 
 1. Open Xampp server, click on config of Apache and select `PHP (php.ini)`
@@ -147,9 +144,11 @@ We can add a Remote IP or disable whitelisting ( $enableIpWhiteList = false; )
 
 <img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/management-config-3.png" alt="Managemeent Config" border="0">
 
+
 ## OPSEC Consideration
 
 Access to the 365-Stealer Management portal shall only be allowed from the infrastructure that you own. Don't expose the 365-Stealer Management portal on the Internet.
+
 
 ## Command Line Help
 ```
@@ -161,7 +160,6 @@ usage: 365-Stealer.py [-h] [--set-config] [--get-config] [--code CODE] [--token 
                       [--no-ssl] [--port PORT] [--disable-logs]
                       [--custom-steal {listusers,checklicence,outlook,onedrive,onenote} [{listusers,checklicence,outlook,onedrive,onenote} ...]]
                       [--delay DELAY]
-
 optional arguments:
   -h, --help            show this help message and exit
   --set-config          Set 365-Stealer Configuration
@@ -207,20 +205,19 @@ optional arguments:
 
 ## Video
 <h1 align="center">
-<span style="color:#00A1FF">1. 365-Stealer Introduction/Guide Video.</span>
-<a href="https://youtu.be/22ku67tElkI">
+	<span style="color:#00A1FF">1. 365-Stealer Introduction/Guide Video.</span>
+<a href="https://www.youtube.com/watch?v=2CcF4JpLW3Q">
 <img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/thumbnail.png" alt="thumbnail" border="0" width="90%">
 </a>
 </h1>
 
-<h2 align="center">
+
 Author: 
 <a href="https://twitter.com/trouble1_raunak" target="_blank"> 
 @trouble1_raunak <img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/twitter-icon.png" width="35px"></a>
-</h2>
-<h2 align="center">
-Being used in <a href="https://bootcamps.pentesteracademy.com/course/ad-azure-jun-21">Attacking and Defending Azure AD Cloud</a>
-</h2>
+
+Being used in <a href="https://bootcamps.pentesteracademy.com/courses">Attacking and Defending Azure AD Cloud: Beginner's Edition</a>
+
 
 ## Bugs and Feature Requests
 
