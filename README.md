@@ -17,6 +17,7 @@
 	- [ Enable sqlite3 in apache server](#Enable-sqlite3-in-apache-server)
 - [Configure 365-Stealer Management portal](#Configure-365-Stealer-Management-portal)
 	- [Enable IP whitelisting for 365-Stealer Management portal](#Enable-IP-whitelisting-for-365-Stealer-Management-portal)
+- [OPSEC Consideration](#OPSEC-Consideration)
 - [Command Line Help](#Command-Line-Help)
 - [Blog](#Blog)
 - [Video](#Video)
@@ -146,6 +147,9 @@ We can add a Remote IP or disable whitelisting ( $enableIpWhiteList = false; )
 
 <img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/management-config-3.png" alt="Managemeent Config" border="0">
 
+## OPSEC Consideration
+
+Access to the 365-Stealer Management portal shall only be allowed from the infrastructure that you own. Don't expose the 365-Stealer Management portal on the Internet.
 
 ## Command Line Help
 ```
