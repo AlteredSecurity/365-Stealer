@@ -268,15 +268,18 @@ if arg.set_config is not False:
         macros_file_path = input(" Macros File Path ==> ")
         
     extension_onedrive       = input(" OneDrive Extensions ==> ")
-    delay                    = 0
+    delay                    = ""
         
-    while delay == 0:
+    while delay == "":
         try:
             delay = input(" Delay ==> ").replace(" ", "")
+            if delay == "":
+                delay = 0
+                break
             delay = int(delay)
         except Exception as e:
-            print(crayons.red(" [-] Error: Only Interger value excepted!", bold=True))
-            delay = 0
+            print(crayons.yellow(" [!] Error: Only Interger value excepted!", bold=True))
+            delay = ""
 
     if isinstance(delay, str):
         delay = 1
