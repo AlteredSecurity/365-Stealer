@@ -1,0 +1,16 @@
+{
+  "message": {
+    "subject": "Meeting",
+    "body": {
+      "contentType": "Text",
+      "content": "We booked a room for tommorrow morning at 11:00pm for 4 people"
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "dummy@gmail.com"
+        }
+      }
+    ]
+  }
+}
