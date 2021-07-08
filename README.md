@@ -203,22 +203,6 @@ optional arguments:
 
 [Introduction To 365-Stealer](https://www.alteredsecurity.com/post/Introduction-To-365-Stealer)
 
-## Video
-<h1 align="center">
-	<span style="color:#00A1FF">1. 365-Stealer Introduction/Guide Video.</span>
-<a href="https://www.youtube.com/watch?v=2CcF4JpLW3Q">
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/thumbnail.png" alt="thumbnail" border="0" width="90%">
-</a>
-</h1>
-
-
-Author: 
-<a href="https://twitter.com/trouble1_raunak" target="_blank"> 
-@trouble1_raunak <img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/twitter-icon.png" width="35px"></a>
-
-Being used in <a href="https://bootcamps.pentesteracademy.com/courses">Attacking and Defending Azure AD Cloud: Beginner's Edition</a>
-
-
 ## Bugs and Feature Requests
 
 Please raise an issue if you encounter a bug or have a feature request. 
