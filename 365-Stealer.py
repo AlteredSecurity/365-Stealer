@@ -224,7 +224,7 @@ def setConfig(conn, data):
         cur = conn.cursor()
         cur.execute(sql, data)
         conn.commit()
-        print(crayons.green("[+] 365-Sealer Configuration set successfully!\n", bold=True))
+        print(crayons.green("[+] 365-Stealer Configuration set successfully!\n", bold=True))
         print(crayons.yellow("Client ID: " + data[0], bold=True))
         print(crayons.yellow("Client Secret: " + data[1], bold=True))
         print(crayons.yellow("Redirect Url: " + data[2], bold=True))
