@@ -39,7 +39,7 @@
 
 An illicit consent grant attack occurs when an attacker registers a malicious application within Azure, requesting access to sensitive data like contacts, emails, or documents. The attacker deceives a user into consenting to the app, usually by presenting it as legitimate. Once the victim clicks "Accept," they unknowingly provide access to the attacker, allowing them to act on behalf of the victim without needing the victim’s organizational credentials.
 
-To explain more clearly, once the user grants permission, Azure AD sends a token to the attacker's server. This token gives the attacker the ability to read emails, send emails, access files on OneDrive, and perform other malicious activities using the victim's credentials. Unlike phishing attacks that rely on stealing passwords, illicit consent grant attacks bypass authentication entirely by abusing the permissions system of cloud applications.
+To explain more clearly, once the user grants permission, Entra ID sends a token to the attacker's server. This token gives the attacker the ability to read emails, send emails, access files on OneDrive, and perform other malicious activities using the victim's credentials. Unlike phishing attacks that rely on stealing passwords, illicit consent grant attacks bypass authentication entirely by abusing the permissions system of cloud applications.
 
 ## Key Features of 365-Stealer
 
@@ -100,7 +100,7 @@ If you prefer to manually register an Azure application, follow these steps:
 4. **Create a New Registration:** Click on `New registration` to begin the process of registering a new application.
 5. **Provide Application Details:**
    - **Name:** Enter a name for your application. This name will be shown to the user during the consent process.
-   - **Supported Account Types:** Select `Accounts in any organizational directory (Any Azure AD directory - Multitenant)`.
+   - **Supported Account Types:** Select `Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant)`.
 6. **Set the Redirect URI:**
    - Provide the redirect URI that points to your 365-Stealer phishing page. The format should be `https://<DOMAIN/IP>:<PORT>/login/authorized`, where your domain or IP corresponds to where you will host the 365-Stealer application.
 7. **Complete the Registration:**
@@ -160,7 +160,7 @@ If you prefer to manually register an Azure application, follow these steps:
    > [XAMPP](https://www.apachefriends.org/index.html)
 
 3. **Extract and Save the Files:**
-   - After cloning, copy the **354-Stealer** folder and place them in `C:\xampp\htdocs\` that allows you to host the PHP application and run Python.
+   - After cloning, copy the **365-Stealer** folder and place them in `C:\xampp\htdocs\` that allows you to host the PHP application and run Python.
 
 4. **Install Python Dependencies:** Run the following command to install the necessary Python libraries.
    ```
@@ -263,8 +263,10 @@ optional arguments:
 ```
 
 ## Blog
+### [Initial Access Attack in Azure – Understanding and Executing the Illicit Consent Grant Attack in 2025](https://www.alteredsecurity.com/post/initial-access-attack-in-azure-understanding-and-executing-the-illicit-consent-grant-attack-in-202) 
+*For the ground of rewriting and expanding on the original 365-Stealer blog, this updated post explores how illicit consent grant (ICG) attacks work in Microsoft 365.*
 
-[Introduction To 365-Stealer](https://www.alteredsecurity.com/post/initial-access-attack-in-azure-understanding-and-executing-the-illicit-consent-grant-attack-in-202)
+### [Introduction to 365-Stealer *(Old)*](https://www.alteredsecurity.com/post/introduction-to-365-stealer)
 
 ## Bugs and Feature Requests
 
