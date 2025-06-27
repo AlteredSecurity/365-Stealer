@@ -1,7 +1,7 @@
 # 365-Stealer
 
 <h1 align="center">
-   <a href="https://github.com/AlteredSecurity/365-Stealer"><img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/365-Stealers.png" alt="365-Stealer" border="0"></a>
+   <a href="https://github.com/AlteredSecurity/365-Stealer"><img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/365-Stealers.png" alt="365-Stealer" border="0"></a>
 </h1>
 
 ## Table of Contents
@@ -107,9 +107,9 @@ If you prefer to manually register an Azure application, follow these steps:
    - Once all details are entered, click `Register` to create the application.
 
 <h1 align="center">
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/registration.png" alt="app registration" width=720 border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/registration.png" alt="app registration" width=720 border="0">
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/registration1.png" alt="app registration" width=720  border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/registration1.png" alt="app registration" width=720  border="0">
 </h1>
 
 ### Configuring the Application
@@ -123,7 +123,7 @@ If you prefer to manually register an Azure application, follow these steps:
 3. **Save the Secret Value:**
    - Once created, copy and store the secret's value in a safe location, as you won’t be able to retrieve it again after you leave the page.
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/secrets.png" alt="Client Secrets" border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/secrets.png" alt="Client Secrets" border="0">
 
 #### Adding API Permissions
 
@@ -144,7 +144,7 @@ If you prefer to manually register an Azure application, follow these steps:
    6. Mail.Send
    7. User.ReadBasic.All
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/API-Permissions.png" alt="Client Secrets" border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/API-Permissions.png" alt="Client Secrets" border="0">
 
 ## Setting Up 365-Stealer
 
@@ -178,14 +178,14 @@ If you prefer to manually register an Azure application, follow these steps:
 
    - If necessary, modify the paths for `365-Stealer.py`, the database, and python3 in the index.php file located at `C:/xampp/htdocs/yourvictims/`.
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/Management-config-1.png" alt="Managemeent Config" border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/Management-config-1.png" alt="Managemeent Config" border="0">
 
 2. Handling Spaces in File Paths:
 
    - If Python is installed in a directory with spaces in the path (e.g., "Program Files"), make sure to enclose the path in quotes. For example:
    ```"C:/Program Files/Python/python.exe"```
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/Management-config-2.png" alt="Managemeent Config" border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/Management-config-2.png" alt="Managemeent Config" border="0">
 
 ### Enabling IP Whitelisting for the 365-Stealer Management Portal
 
@@ -201,7 +201,7 @@ If you prefer to manually register an Azure application, follow these steps:
 
    - If you wish to disable IP whitelisting entirely, set $enableIpWhiteList = false; in the configuration file.
 
-<img src="https://github.com/AlteredSecurity/365-Stealer/blob/main/Images/management-config-3.png" alt="Managemeent Config" border="0">
+<img src="https://github.com/AlteredSecurity/365-Stealer/blob/master/Images/management-config-3.png" alt="Managemeent Config" border="0">
 
 ## OPSEC Consideration
 
