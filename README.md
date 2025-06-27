@@ -264,7 +264,7 @@ optional arguments:
 
 ## Blog
 
-[Introduction To 365-Stealer](https://www.alteredsecurity.com/post/Introduction-To-365-Stealer)
+[Introduction To 365-Stealer](https://www.alteredsecurity.com/post/initial-access-attack-in-azure-understanding-and-executing-the-illicit-consent-grant-attack-in-202)
 
 ## Bugs and Feature Requests
 
