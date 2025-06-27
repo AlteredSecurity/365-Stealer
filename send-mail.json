@@ -3,12 +3,12 @@
     "subject": "Meeting",
     "body": {
       "contentType": "Text",
-      "content": "We booked a room for tommorrow morning at 11:00pm for 4 people"
+      "content": "This is a test mail. send from 365-steler script --send-mail"
     },
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "dummy@gmail.com"
+          "address": "test@example.com"
         }
       }
     ]

@@ -1,0 +1,244 @@
+/* Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Smaller width */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: relative;
+}
+
+/* Close Button */
+.modal .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+#portForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portForm label,
+#portForm input,
+#portForm button {
+    margin: 10px;
+}
+
+#portForm label {
+    color: #fff;
+    font-size: 18px;
+}
+
+#portForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.modal .btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal .btn:hover {
+    background-color: #333333;
+}
+
+.modal .run-btn {
+    background-color: #007bff;
+    margin: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.modal .run-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Label positioning */
+  .toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .jwt-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border: 3px solid #FFD700; /* Golden Yellow border */
+      padding: 20px;
+      z-index: 1000;
+      width: 60%;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      max-height: 80vh;
+      overflow-y: auto;
+  }
+
+  .jwt-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+  }
+
+  .jwt-section-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+  }
+
+  .jwt-header-content {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+
+  .jwt-payload-content {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+
+  .jwt-header-content pre {
+      color: red;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 0;
+  }
+
+  .jwt-payload-content pre {
+      color: purple;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 0;
+  }
+
+  .jwt-popup-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+  }
+
+  /* Close button "X" */
+  .jwt-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: #333;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  .jwt-close-btn:hover {
+      color: #FF0000;
+  }

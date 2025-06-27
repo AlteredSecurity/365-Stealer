@@ -1,0 +1,2048 @@
+{
+    "AccessReview": [
+        {
+            "name": "AccessReview.Read.All",
+            "id": "ebfcd32b-babb-40f4-a14b-42706e83bd28"
+        },
+        {
+            "name": "AccessReview.ReadWrite.All",
+            "id": "e4aa47b9-9a69-4109-82ed-36ec70d85ff1"
+        },
+        {
+            "name": "AccessReview.ReadWrite.Membership",
+            "id": "5af8c3f5-baca-439a-97b0-ea58a435e269"
+        }
+    ],
+    "Acronym": [
+        {
+            "name": "Acronym.Read.All",
+            "id": "9084c10f-a2d6-4713-8732-348def50fe02"
+        }
+    ],
+    "AdministrativeUnit": [
+        {
+            "name": "AdministrativeUnit.Read.All",
+            "id": "3361d15d-be43-4de6-b441-3c746d05163d"
+        },
+        {
+            "name": "AdministrativeUnit.ReadWrite.All",
+            "id": "7b8a2d34-6b3f-4542-a343-54651608ad81"
+        }
+    ],
+    "Agreement": [
+        {
+            "name": "Agreement.Read.All",
+            "id": "af2819c9-df71-4dd3-ade7-4d7c9dc653b7"
+        },
+        {
+            "name": "Agreement.ReadWrite.All",
+            "id": "ef4b5d93-3104-4664-9053-a5c49ab44218"
+        }
+    ],
+    "AgreementAcceptance": [
+        {
+            "name": "AgreementAcceptance.Read.All",
+            "id": "a66a5341-e66e-4897-9d52-c2df58c2bfb9"
+        }
+    ],
+    "APIConnectors": [
+        {
+            "name": "APIConnectors.Read.All",
+            "id": "1b6ff35f-31df-4332-8571-d31ea5a4893f"
+        },
+        {
+            "name": "APIConnectors.ReadWrite.All",
+            "id": "c67b52c5-7c69-48b6-9d48-7b3af3ded914"
+        }
+    ],
+    "AppCatalog": [
+        {
+            "name": "AppCatalog.Read.All",
+            "id": "88e58d74-d3df-44f3-ad47-e89edf4472e4"
+        },
+        {
+            "name": "AppCatalog.ReadWrite.All",
+            "id": "1ca167d5-1655-44a1-8adf-1414072e1ef9"
+        }
+    ],
+    "AppCertTrustConfiguration": [
+        {
+            "name": "AppCertTrustConfiguration.Read.All",
+            "id": "af281d3a-030d-4122-886e-146fb30a0413"
+        },
+        {
+            "name": "AppCertTrustConfiguration.ReadWrite.All",
+            "id": "4bae2ed4-473e-4841-a493-9829cfd51d48"
+        }
+    ],
+    "RemoteDesktopConfig": [
+        {
+            "name": "RemoteDesktopConfig.ReadWrite.All",
+            "id": "ffa91d43-2ad8-45cc-b592-09caddeb24bb"
+        }
+    ],
+    "Application": [
+        {
+            "name": "Application.Read.All",
+            "id": "c79f8feb-a9db-4090-85f9-90d820caa0eb"
+        },
+        {
+            "name": "Application.ReadWrite.All",
+            "id": "bdfbf15f-ee85-4955-8675-146e8e5296b5"
+        }
+    ],
+    "AppRoleAssignment": [
+        {
+            "name": "AppRoleAssignment.ReadWrite.All",
+            "id": "84bccea3-f856-4a8a-967b-dbe0a3d53a64"
+        }
+    ],
+    "AttackSimulation": [
+        {
+            "name": "AttackSimulation.Read.All",
+            "id": "104a7a4b-ca76-4677-b7e7-2f4bc482f381"
+        },
+        {
+            "name": "AttackSimulation.ReadWrite.All",
+            "id": "27608d7c-2c66-4cad-a657-951d575f5a60"
+        }
+    ],
+    "AuditLog": [
+        {
+            "name": "AuditLog.Read.All",
+            "id": "e4c9e354-4dc5-45b8-9e7c-e1393b0b1a20"
+        }
+    ],
+    "CRM": [
+        {
+            "name": "CRM.Read.All",
+            "id": "ba78b16f-1e01-41b6-89ca-73e0a32b304c"
+        }
+    ],
+    "Endpoint": [
+        {
+            "name": "Endpoint.Read.All",
+            "id": "ee3409fe-617f-43cf-bd1e-fc8b38049e69"
+        }
+    ],
+    "Entra": [
+        {
+            "name": "Entra.Read.All",
+            "id": "5ff2f415-e0f1-4d11-bfd0-6d87c0f667fd"
+        }
+    ],
+    "Exchange": [
+        {
+            "name": "Exchange.Read.All",
+            "id": "6c8c71d2-c7e1-45b0-ac6d-1d2724fba6ae"
+        },
+        {
+            "name": "Exchange.Read.All",
+            "id": "1fe7aa48-9373-4a47-8df3-168335e0f4c9"
+        }
+    ],
+    "OneDrive": [
+        {
+            "name": "OneDrive.Read.All",
+            "id": "4a72c235-a50d-4870-b598-fd88fd1fa074"
+        },
+        {
+            "name": "OneDrive.Read.All",
+            "id": "347e3c16-30f3-4ac7-9b52-fc3c053de9c9"
+        }
+    ],
+    "SharePoint": [
+        {
+            "name": "SharePoint.Read.All",
+            "id": "30630b65-ed12-4a81-9130-e3a964109fae"
+        }
+    ],
+    "AuditLogsQuery": [
+        {
+            "name": "AuditLogsQuery.Read.All",
+            "id": "1d9e7ac3-0eca-442c-82f9-e92625af6e6d"
+        }
+    ],
+    "AuthenticationContext": [
+        {
+            "name": "AuthenticationContext.Read.All",
+            "id": "57b030f1-8c35-469c-b0d9-e4a077debe70"
+        },
+        {
+            "name": "AuthenticationContext.ReadWrite.All",
+            "id": "ba6d575a-1344-4516-b777-1404f5593057"
+        }
+    ],
+    "Configuration": [
+        {
+            "name": "Configuration.Read.All",
+            "id": "444ed4b6-0554-4dc6-8e9c-3f9a34ee3ff6"
+        },
+        {
+            "name": "Configuration.ReadWrite.All",
+            "id": "a0244d16-171c-4496-8ffb-7b9b6954d339"
+        }
+    ],
+    "Monitor": [
+        {
+            "name": "Monitor.Read.All",
+            "id": "b4e98de1-4600-4e90-b5e1-7c1dfef04e5c"
+        }
+    ],
+    "Restore": [
+        {
+            "name": "Restore.Read.All",
+            "id": "94b36f78-434f-4904-8c08-421d9a9c1dc2"
+        },
+        {
+            "name": "Restore.ReadWrite.All",
+            "id": "9f89e109-94b9-4c9b-b4fc-98cdaa54f574"
+        }
+    ],
+    "Search": [
+        {
+            "name": "Search.Read.All",
+            "id": "2b24830f-f435-446f-ab5a-b1e70d9a2eb5"
+        }
+    ],
+    "BillingConfiguration": [
+        {
+            "name": "BillingConfiguration.ReadWrite.All",
+            "id": "2bf6d319-dfca-4c22-9879-f88dcfaee6be"
+        }
+    ],
+    "BitlockerKey": [
+        {
+            "name": "BitlockerKey.Read.All",
+            "id": "b27a61ec-b99c-4d6a-b126-c4375d08ae30"
+        },
+        {
+            "name": "BitlockerKey.ReadBasic.All",
+            "id": "5a107bfc-4f00-4e1a-b67e-66451267bc68"
+        }
+    ],
+    "Bookings": [
+        {
+            "name": "Bookings.Manage.All",
+            "id": "7f36b48e-542f-4d3b-9bcb-8406f0ab9fdb"
+        },
+        {
+            "name": "Bookings.Read.All",
+            "id": "33b1df99-4b29-4548-9339-7a7b83eaeebc"
+        },
+        {
+            "name": "Bookings.ReadWrite.All",
+            "id": "948eb538-f19d-4ec5-9ccc-f059e1ea4c72"
+        }
+    ],
+    "BookingsAppointment": [
+        {
+            "name": "BookingsAppointment.ReadWrite.All",
+            "id": "02a5a114-36a6-46ff-a102-954d89d9ab02"
+        }
+    ],
+    "Bookmark": [
+        {
+            "name": "Bookmark.Read.All",
+            "id": "98b17b35-f3b1-4849-a85f-9f13733002f0"
+        }
+    ],
+    "BrowserSiteLists": [
+        {
+            "name": "BrowserSiteLists.Read.All",
+            "id": "fb9be2b7-a7fc-4182-aec1-eda4597c43d5"
+        },
+        {
+            "name": "BrowserSiteLists.ReadWrite.All",
+            "id": "83b34c85-95bf-497b-a04e-b58eca9d49d0"
+        }
+    ],
+    "BusinessScenarioConfig": [
+        {
+            "name": "BusinessScenarioConfig.Read.All",
+            "id": "d16480b2-e469-4118-846b-d3d177327bee"
+        },
+        {
+            "name": "BusinessScenarioConfig.Read.OwnedBy",
+            "id": "c47e7b6e-d6f1-4be9-9ffd-1e00f3e32892"
+        },
+        {
+            "name": "BusinessScenarioConfig.ReadWrite.All",
+            "id": "755e785b-b658-446f-bb22-5a46abd029ea"
+        },
+        {
+            "name": "BusinessScenarioConfig.ReadWrite.OwnedBy",
+            "id": "b3b7fcff-b4d4-4230-bf6f-90bd91285395"
+        }
+    ],
+    "BusinessScenarioData": [
+        {
+            "name": "BusinessScenarioData.Read.OwnedBy",
+            "id": "25b265c4-5d34-4e44-952d-b567f6d3b96d"
+        },
+        {
+            "name": "BusinessScenarioData.ReadWrite.OwnedBy",
+            "id": "19932d57-2952-4c60-8634-3655c79fc527"
+        }
+    ],
+    "Calendars": [
+        {
+            "name": "Calendars.Read.Shared",
+            "id": "2b9c4092-424d-4249-948d-b43879977640"
+        },
+        {
+            "name": "Calendars.ReadWrite.Shared",
+            "id": "12466101-c9b8-439a-8589-dd09ee67e8e9"
+        }
+    ],
+    "Channel": [
+        {
+            "name": "Channel.Delete.All",
+            "id": "cc83893a-e232-4723-b5af-bd0b01bcfe65"
+        },
+        {
+            "name": "Channel.ReadBasic.All",
+            "id": "9d8982ae-4365-4f57-95e9-d6032a4c0b87"
+        }
+    ],
+    "ChannelMember": [
+        {
+            "name": "ChannelMember.Read.All",
+            "id": "2eadaff8-0bce-4198-a6b9-2cfc35a30075"
+        },
+        {
+            "name": "ChannelMember.ReadWrite.All",
+            "id": "0c3e411a-ce45-4cd1-8f30-f99a3efa7b11"
+        }
+    ],
+    "ChannelMessage": [
+        {
+            "name": "ChannelMessage.Read.All",
+            "id": "767156cb-16ae-4d10-8f8b-41b657c8c8c8"
+        }
+    ],
+    "ChannelSettings": [
+        {
+            "name": "ChannelSettings.Read.All",
+            "id": "233e0cf1-dd62-48bc-b65b-b38fe87fcf8e"
+        },
+        {
+            "name": "ChannelSettings.ReadWrite.All",
+            "id": "d649fb7c-72b4-4eec-b2b4-b15acf79e378"
+        }
+    ],
+    "Chat": [
+        {
+            "name": "Chat.ManageDeletion.All",
+            "id": "bb64e6fc-6b6d-4752-aea0-dd922dbba588"
+        },
+        {
+            "name": "Chat.ReadWrite.All",
+            "id": "7e9a077b-3711-42b9-b7cb-5fa5f3f7fea7"
+        }
+    ],
+    "Discovery": [
+        {
+            "name": "Discovery.Read.All",
+            "id": "ad46d60e-1027-4b75-af88-7c14ccf43a19"
+        }
+    ],
+    "CloudPC": [
+        {
+            "name": "CloudPC.Read.All",
+            "id": "5252ec4e-fd40-4d92-8c68-89dd1d3c6110"
+        },
+        {
+            "name": "CloudPC.ReadWrite.All",
+            "id": "9d77138f-f0e2-47ba-ab33-cd246c8b79d1"
+        }
+    ],
+    "Community": [
+        {
+            "name": "Community.Read.All",
+            "id": "12ae2e92-14b5-47b2-babb-4e890bbedc0a"
+        },
+        {
+            "name": "Community.ReadWrite.All",
+            "id": "9e69467d-e0e2-402b-a926-3d796990197f"
+        }
+    ],
+    "ConsentRequest": [
+        {
+            "name": "ConsentRequest.Read.All",
+            "id": "f3bfad56-966e-4590-a536-82ecf548ac1e"
+        },
+        {
+            "name": "ConsentRequest.ReadApprove.All",
+            "id": "e694a3a1-7878-46d8-8c29-3d195f6589f4"
+        },
+        {
+            "name": "ConsentRequest.ReadWrite.All",
+            "id": "497d9dfa-3bd1-481a-baab-90895e54568c"
+        }
+    ],
+    "Contacts": [
+        {
+            "name": "Contacts.Read",
+            "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d"
+        },
+        {
+            "name": "Contacts.Read.Shared",
+            "id": "242b9d9e-ed24-4d09-9a52-f43769beb9d4"
+        },
+        {
+            "name": "Contacts.ReadWrite",
+            "id": "d56682ec-c09e-4743-aaf4-1a3aac4caa21"
+        },
+        {
+            "name": "Contacts.ReadWrite.Shared",
+            "id": "afb6c84b-06be-49af-80bb-8f3f77004eab"
+        }
+    ],
+    "CrossTenantInformation": [
+        {
+            "name": "CrossTenantInformation.ReadBasic.All",
+            "id": "81594d25-e88e-49cf-ac8c-fecbff49f994"
+        }
+    ],
+    "CrossTenantUserProfileSharing": [
+        {
+            "name": "CrossTenantUserProfileSharing.Read.All",
+            "id": "759dcd16-3c90-463c-937e-abf89f991c18"
+        },
+        {
+            "name": "CrossTenantUserProfileSharing.ReadWrite.All",
+            "id": "64dfa325-cbf8-48e3-938d-51224a0cac01"
+        }
+    ],
+    "CustomAuthenticationExtension": [
+        {
+            "name": "CustomAuthenticationExtension.Read.All",
+            "id": "b2052569-c98c-4f36-a5fb-43e5c111e6d0"
+        },
+        {
+            "name": "CustomAuthenticationExtension.ReadWrite.All",
+            "id": "8dfcf82f-15d0-43b3-bc78-a958a13a5792"
+        }
+    ],
+    "CustomDetection": [
+        {
+            "name": "CustomDetection.Read.All",
+            "id": "b13ff42e-f321-4d7d-a462-141c46a1b832"
+        },
+        {
+            "name": "CustomDetection.ReadWrite.All",
+            "id": "c34088fb-0649-4714-af0b-bcbfec155897"
+        }
+    ],
+    "CustomSecAttributeAssignment": [
+        {
+            "name": "CustomSecAttributeAssignment.Read.All",
+            "id": "b46ffa80-fe3d-4822-9a1a-c200932d54d0"
+        },
+        {
+            "name": "CustomSecAttributeAssignment.ReadWrite.All",
+            "id": "ca46335e-8453-47cd-a001-8459884efeae"
+        }
+    ],
+    "CustomSecAttributeAuditLogs": [
+        {
+            "name": "CustomSecAttributeAuditLogs.Read.All",
+            "id": "1fcdeaab-b519-44dd-bffc-ed1fd15a24e0"
+        }
+    ],
+    "CustomSecAttributeDefinition": [
+        {
+            "name": "CustomSecAttributeDefinition.Read.All",
+            "id": "ce026878-a0ff-4745-a728-d4fedd086c07"
+        },
+        {
+            "name": "CustomSecAttributeDefinition.ReadWrite.All",
+            "id": "8b0160d4-5743-482b-bb27-efc0a485ca4a"
+        }
+    ],
+    "CustomTags": [
+        {
+            "name": "CustomTags.Read.All",
+            "id": "de6ea87d-10bd-467c-8682-d525a0c61b89"
+        },
+        {
+            "name": "CustomTags.ReadWrite.All",
+            "id": "2f1bbe0a-f34b-4efb-9edb-8db8dcb50eca"
+        }
+    ],
+    "DelegatedAdminRelationship": [
+        {
+            "name": "DelegatedAdminRelationship.Read.All",
+            "id": "0c0064ea-477b-4130-82a5-4c2cc4ff68aa"
+        },
+        {
+            "name": "DelegatedAdminRelationship.ReadWrite.All",
+            "id": "885f682f-a990-4bad-a642-36736a74b0c7"
+        }
+    ],
+    "DelegatedPermissionGrant": [
+        {
+            "name": "DelegatedPermissionGrant.Read.All",
+            "id": "a197cdc4-a8e8-4d49-9d35-4ca7c83887b4"
+        },
+        {
+            "name": "DelegatedPermissionGrant.ReadWrite.All",
+            "id": "41ce6ca6-6826-4807-84f1-1c82854f7ee5"
+        }
+    ],
+    "Device": [
+        {
+            "name": "Device.Read.All",
+            "id": "951183d1-1a61-466f-a6d1-1fde911bfd95"
+        }
+    ],
+    "DeviceLocalCredential": [
+        {
+            "name": "DeviceLocalCredential.Read.All",
+            "id": "280b3b69-0437-44b1-bc20-3b2fca1ee3e9"
+        },
+        {
+            "name": "DeviceLocalCredential.ReadBasic.All",
+            "id": "9917900e-410b-4d15-846e-42a357488545"
+        }
+    ],
+    "DeviceManagementApps": [
+        {
+            "name": "DeviceManagementApps.Read.All",
+            "id": "4edf5f54-4666-44af-9de9-0144fb4b6e8c"
+        },
+        {
+            "name": "DeviceManagementApps.ReadWrite.All",
+            "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af"
+        }
+    ],
+    "DeviceManagementConfiguration": [
+        {
+            "name": "DeviceManagementConfiguration.Read.All",
+            "id": "f1493658-876a-4c87-8fa7-edb559b3476a"
+        },
+        {
+            "name": "DeviceManagementConfiguration.ReadWrite.All",
+            "id": "0883f392-0a7a-443d-8c76-16a6d39c7b63"
+        }
+    ],
+    "DeviceManagementManagedDevices": [
+        {
+            "name": "DeviceManagementManagedDevices.PrivilegedOperations.All",
+            "id": "3404d2bf-2b13-457e-a330-c24615765193"
+        },
+        {
+            "name": "DeviceManagementManagedDevices.Read.All",
+            "id": "314874da-47d6-4978-88dc-cf0d37f0bb82"
+        },
+        {
+            "name": "DeviceManagementManagedDevices.ReadWrite.All",
+            "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3"
+        }
+    ],
+    "DeviceManagementRBAC": [
+        {
+            "name": "DeviceManagementRBAC.Read.All",
+            "id": "49f0cc30-024c-4dfd-ab3e-82e137ee5431"
+        },
+        {
+            "name": "DeviceManagementRBAC.ReadWrite.All",
+            "id": "0c5e8a55-87a6-4556-93ab-adc52c4d862d"
+        }
+    ],
+    "DeviceManagementServiceConfig": [
+        {
+            "name": "DeviceManagementServiceConfig.Read.All",
+            "id": "8696daa5-bce5-4b2e-83f9-51b6defc4e1e"
+        },
+        {
+            "name": "DeviceManagementServiceConfig.ReadWrite.All",
+            "id": "662ed50a-ac44-4eef-ad86-62eed9be2a29"
+        }
+    ],
+    "Directory": [
+        {
+            "name": "Directory.AccessAsUser.All",
+            "id": "0e263e50-5827-48a4-b97c-d940288653c7"
+        },
+        {
+            "name": "Directory.Read.All",
+            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a"
+        },
+        {
+            "name": "Directory.ReadWrite.All",
+            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84"
+        },
+        {
+            "name": "Directory.Write.Restricted",
+            "id": "cba5390f-ed6a-4b7f-b657-0efc2210ed20"
+        }
+    ],
+    "DirectoryRecommendations": [
+        {
+            "name": "DirectoryRecommendations.Read.All",
+            "id": "34d3bd24-f6a6-468c-b67c-0c365c1d6410"
+        },
+        {
+            "name": "DirectoryRecommendations.ReadWrite.All",
+            "id": "f37235e8-90a0-4189-93e2-e55b53867ccd"
+        }
+    ],
+    "Domain": [
+        {
+            "name": "Domain.Read.All",
+            "id": "2f9ee017-59c1-4f1d-9472-bd5529a7b311"
+        },
+        {
+            "name": "Domain.ReadWrite.All",
+            "id": "0b5d694c-a244-4bde-86e6-eb5cd07730fe"
+        }
+    ],
+    "EAS": [
+        {
+            "name": "EAS.AccessAsUser.All",
+            "id": "ff91d191-45a0-43fd-b837-bd682c4a0b0f"
+        }
+    ],
+    "eDiscovery": [
+        {
+            "name": "eDiscovery.Read.All",
+            "id": "99201db3-7652-4d5a-809a-bdb94f85fe3c"
+        },
+        {
+            "name": "eDiscovery.ReadWrite.All",
+            "id": "acb8f680-0834-4146-b69e-4ab1b39745ad"
+        }
+    ],
+    "EntitlementManagement": [
+        {
+            "name": "EntitlementManagement.Read.All",
+            "id": "5449aa12-1393-4ea2-a7c7-d0e06c1a56b2"
+        },
+        {
+            "name": "EntitlementManagement.ReadWrite.All",
+            "id": "ae7a573d-81d7-432b-ad44-4ed5c9d89038"
+        }
+    ],
+    "EventListener": [
+        {
+            "name": "EventListener.Read.All",
+            "id": "f7dd3bed-5eec-48da-bc73-1c0ef50bc9a1"
+        },
+        {
+            "name": "EventListener.ReadWrite.All",
+            "id": "d11625a6-fe21-4fc6-8d3d-063eba5525ad"
+        }
+    ],
+    "EWS": [
+        {
+            "name": "EWS.AccessAsUser.All",
+            "id": "9769c687-087d-48ac-9cb3-c37dde652038"
+        }
+    ],
+    "ExternalConnection": [
+        {
+            "name": "ExternalConnection.Read.All",
+            "id": "a38267a5-26b6-4d76-9493-935b7599116b"
+        },
+        {
+            "name": "ExternalConnection.ReadWrite.All",
+            "id": "bbbbd9b3-3566-4931-ac37-2b2180d9e334"
+        },
+        {
+            "name": "ExternalConnection.ReadWrite.OwnedBy",
+            "id": "4082ad95-c812-4f02-be92-780c4c4f1830"
+        }
+    ],
+    "ExternalItem": [
+        {
+            "name": "ExternalItem.Read.All",
+            "id": "922f9392-b1b7-483c-a4be-0089be7704fb"
+        },
+        {
+            "name": "ExternalItem.ReadWrite.All",
+            "id": "b02c54f8-eb48-4c50-a9f0-a149e5a2012f"
+        },
+        {
+            "name": "ExternalItem.ReadWrite.OwnedBy",
+            "id": "4367b9d7-cee7-4995-853c-a0bdfe95c1f9"
+        }
+    ],
+    "ExternalUserProfile": [
+        {
+            "name": "ExternalUserProfile.Read.All",
+            "id": "47167bec-55a7-4caf-9ecc-8d4566e3cfb1"
+        },
+        {
+            "name": "ExternalUserProfile.ReadWrite.All",
+            "id": "c6068dc7-a791-46a4-a811-b8228e6649ab"
+        }
+    ],
+    "Files": [
+        {
+            "name": "Files.Read.All",
+            "id": "df85f4d6-205c-4ac5-a5ea-6bf408dba283"
+        },
+        {
+            "name": "Files.Read.Selected",
+            "id": "5447fe39-cb82-4c1a-b977-520e67e724eb"
+        },
+        {
+            "name": "Files.ReadWrite.All",
+            "id": "863451e7-0667-486c-a5d6-d135439485f0"
+        },
+        {
+            "name": "Files.ReadWrite.AppFolder",
+            "id": "8019c312-3263-48e6-825e-2b833497195b"
+        },
+        {
+            "name": "Files.ReadWrite.Selected",
+            "id": "17dde5bd-8c17-420f-a486-969730c1b827"
+        },
+        {
+            "name": "Files.SelectedOperations.Selected",
+            "id": "ef2779dc-ef1b-4211-8310-8a0ac2450081"
+        }
+    ],
+    "Financials": [
+        {
+            "name": "Financials.ReadWrite.All",
+            "id": "f534bf13-55d4-45a9-8f3c-c92fe64d6131"
+        }
+    ],
+    "Export": [
+        {
+            "name": "Export.Read.All",
+            "id": "092211d9-ca1a-427b-813e-b79c7653fe71"
+        },
+        {
+            "name": "Export.ReadWrite.All",
+            "id": "2edeb9fd-4228-480c-a26d-2ed52011cf3d"
+        }
+    ],
+    "Conversation": [
+        {
+            "name": "Conversation.Read.All",
+            "id": "c92fbbc2-50e0-4842-93ef-385c3293ea3d"
+        },
+        {
+            "name": "Conversation.ReadWrite.All",
+            "id": "302bcbb5-855a-4e49-ae20-94a331b0281e"
+        }
+    ],
+    "Group": [
+        {
+            "name": "Group.Read.All",
+            "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d"
+        },
+        {
+            "name": "Group.ReadWrite.All",
+            "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0"
+        }
+    ],
+    "GroupMember": [
+        {
+            "name": "GroupMember.Read.All",
+            "id": "bc024368-1153-4739-b217-4326f2e966d0"
+        },
+        {
+            "name": "GroupMember.ReadWrite.All",
+            "id": "f81125ac-d3b7-4573-a3b2-7099cc39df9e"
+        }
+    ],
+    "HealthMonitoringAlert": [
+        {
+            "name": "HealthMonitoringAlert.Read.All",
+            "id": "74b4ff32-4917-4536-a66d-38a4861e6220"
+        },
+        {
+            "name": "HealthMonitoringAlert.ReadWrite.All",
+            "id": "b7c60f27-2195-4d5f-96a7-6b98bdfd9664"
+        }
+    ],
+    "HealthMonitoringAlertConfig": [
+        {
+            "name": "HealthMonitoringAlertConfig.Read.All",
+            "id": "fb873030-8626-47e6-96ff-8a5bff3b725f"
+        },
+        {
+            "name": "HealthMonitoringAlertConfig.ReadWrite.All",
+            "id": "b3e5ebc6-1c23-4337-8286-3f27165addb4"
+        }
+    ],
+    "IdentityProvider": [
+        {
+            "name": "IdentityProvider.Read.All",
+            "id": "43781733-b5a7-4d1b-98f4-e8edff23e1a9"
+        },
+        {
+            "name": "IdentityProvider.ReadWrite.All",
+            "id": "f13ce604-1677-429f-90bd-8a10b9f01325"
+        }
+    ],
+    "IdentityRiskEvent": [
+        {
+            "name": "IdentityRiskEvent.Read.All",
+            "id": "8f6a01e7-0391-4ee5-aa22-a3af122cef27"
+        },
+        {
+            "name": "IdentityRiskEvent.ReadWrite.All",
+            "id": "9e4862a5-b68f-479e-848a-4e07e25c9916"
+        }
+    ],
+    "IdentityRiskyServicePrincipal": [
+        {
+            "name": "IdentityRiskyServicePrincipal.Read.All",
+            "id": "ea5c4ab0-5a73-4f35-8272-5d5337884e5d"
+        },
+        {
+            "name": "IdentityRiskyServicePrincipal.ReadWrite.All",
+            "id": "bb6f654c-d7fd-4ae3-85c3-fc380934f515"
+        }
+    ],
+    "IdentityRiskyUser": [
+        {
+            "name": "IdentityRiskyUser.Read.All",
+            "id": "d04bb851-cb7c-4146-97c7-ca3e71baf56c"
+        },
+        {
+            "name": "IdentityRiskyUser.ReadWrite.All",
+            "id": "e0a7cdbb-08b0-4697-8264-0069786e9674"
+        }
+    ],
+    "IdentityUserFlow": [
+        {
+            "name": "IdentityUserFlow.Read.All",
+            "id": "2903d63d-4611-4d43-99ce-a33f3f52e343"
+        },
+        {
+            "name": "IdentityUserFlow.ReadWrite.All",
+            "id": "281892cc-4dbf-4e3a-b6cc-b21029bb4e82"
+        }
+    ],
+    "IMAP": [
+        {
+            "name": "IMAP.AccessAsUser.All",
+            "id": "652390e4-393a-48de-9484-05f9b1212954"
+        }
+    ],
+    "DataConnector": [
+        {
+            "name": "DataConnector.Read.All",
+            "id": "d19c0de5-7ecb-4aba-b090-da35ebcd5425"
+        },
+        {
+            "name": "DataConnector.ReadWrite.All",
+            "id": "5ce933ac-3997-4280-aed0-cc072e5c062a"
+        }
+    ],
+    "InboundFlow": [
+        {
+            "name": "InboundFlow.Read.All",
+            "id": "cb0774da-a605-42af-959c-32f438fb38f4"
+        },
+        {
+            "name": "InboundFlow.ReadWrite.All",
+            "id": "97044676-2cec-40ee-bd70-38df444c9e70"
+        }
+    ],
+    "OutboundFlow": [
+        {
+            "name": "OutboundFlow.Read.All",
+            "id": "4741a003-8952-4be4-9217-33a0ac327122"
+        },
+        {
+            "name": "OutboundFlow.ReadWrite.All",
+            "id": "aeb68e0b-e562-4a1f-b6dd-3484ad0cbb4b"
+        }
+    ],
+    "ReferenceDefinition": [
+        {
+            "name": "ReferenceDefinition.Read.All",
+            "id": "a3f96ffe-cb84-40a8-ac85-582d7ef97c2a"
+        },
+        {
+            "name": "ReferenceDefinition.ReadWrite.All",
+            "id": "a757d430-be6d-430f-af57-28aabe79d247"
+        }
+    ],
+    "Run": [
+        {
+            "name": "Run.Read.All",
+            "id": "92685235-50c4-4702-b2c8-36043db6fa79"
+        }
+    ],
+    "SourceSystem": [
+        {
+            "name": "SourceSystem.Read.All",
+            "id": "49b7016c-89ae-41e7-bd6f-b7170c5490bf"
+        },
+        {
+            "name": "SourceSystem.ReadWrite.All",
+            "id": "9599f005-05d6-4ea7-b1b1-4929768af5d0"
+        }
+    ],
+    "TimePeriod": [
+        {
+            "name": "TimePeriod.Read.All",
+            "id": "c9d51f28-8ccd-42b2-a836-fd8fe9ebf2ae"
+        },
+        {
+            "name": "TimePeriod.ReadWrite.All",
+            "id": "b6d56528-3032-4f9d-830f-5a24a25e6661"
+        }
+    ],
+    "IndustryData": [
+        {
+            "name": "IndustryData.ReadBasic.All",
+            "id": "60382b96-1f5e-46ea-a544-0407e489e588"
+        }
+    ],
+    "UserMetric": [
+        {
+            "name": "UserMetric.Read.All",
+            "id": "7d249730-51a3-4180-8ec1-214f144f1bff"
+        }
+    ],
+    "LearningContent": [
+        {
+            "name": "LearningContent.Read.All",
+            "id": "ea4c1fd9-6a9f-4432-8e5d-86e06cc0da77"
+        },
+        {
+            "name": "LearningContent.ReadWrite.All",
+            "id": "53cec1c4-a65f-4981-9dc1-ad75dbf1c077"
+        }
+    ],
+    "LicenseAssignment": [
+        {
+            "name": "LicenseAssignment.ReadWrite.All",
+            "id": "f55016cc-149c-447e-8f21-7cf3ec1d6350"
+        }
+    ],
+    "LifecycleWorkflows": [
+        {
+            "name": "LifecycleWorkflows.Read.All",
+            "id": "9bcb9916-765a-42af-bf77-02282e26b01a"
+        },
+        {
+            "name": "LifecycleWorkflows.ReadWrite.All",
+            "id": "84b9d731-7db8-4454-8c90-fd9e95350179"
+        }
+    ],
+    "ListItems": [
+        {
+            "name": "ListItems.SelectedOperations.Selected",
+            "id": "d6d361b3-211a-4191-9fa7-15f72de4aac4"
+        }
+    ],
+    "Lists": [
+        {
+            "name": "Lists.SelectedOperations.Selected",
+            "id": "033b51ee-d6fa-4add-b627-ee680c7212b5"
+        }
+    ],
+    "Mail": [
+        {
+            "name": "Mail.Read",
+            "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca"
+        },
+        {
+            "name": "Mail.Read.Shared",
+            "id": "7b9103a5-4610-446b-9670-80643382c1fa"
+        },
+        {
+            "name": "Mail.ReadBasic",
+            "id": "a4b8392a-d8d1-4954-a029-8e668a39a170"
+        },
+        {
+            "name": "Mail.ReadBasic.Shared",
+            "id": "b11fa0e7-fdb7-4dc9-b1f1-59facd463480"
+        },
+        {
+            "name":"Mail.ReadWrite",
+            "id": "5df07973-7d5d-46ed-9847-1271055cbd51"
+        },
+        {
+            "name": "Mail.ReadWrite.Shared",
+            "id": "e383f46e-2787-4529-855e-0e479a3ffac0"
+        },
+        {
+            "name": "Mail.Send",
+            "id": "a367ab51-6b49-43bf-a716-a1fb06d2a174"
+        },
+        {
+            "name": "Mail.Send.Shared",
+            "id": "a367ab51-6b49-43bf-a716-a1fb06d2a174"
+        }
+    ],
+    "MailBox":[
+        {
+            "name": "MailboxSetting.ReadWrite",
+            "id": "818c620a-27a9-40bd-a6a5-d96f7d610b4b"
+        },
+        {
+            "name": "MailboxSetting.Read.All",
+            "id": "87f447af-9fa4-4c32-9dfa-4a57a73d18ce"
+        }
+    ],
+    "ManagedTenants": [
+        {
+            "name": "ManagedTenants.Read.All",
+            "id": "dc34164e-6c4a-41a0-be89-3ae2fbad7cd3"
+        },
+        {
+            "name": "ManagedTenants.ReadWrite.All",
+            "id": "b31fa710-c9b3-4d9e-8f5e-8036eecddab9"
+        }
+    ],
+    "Member": [
+        {
+            "name": "Member.Read.Hidden",
+            "id": "f6a3db3e-f7e8-4ed2-a414-557c8c9830be"
+        }
+    ],
+    "MultiTenantOrganization": [
+        {
+            "name": "MultiTenantOrganization.Read.All",
+            "id": "526aa72a-5878-49fe-bf4e-357973af9b06"
+        },
+        {
+            "name": "MultiTenantOrganization.ReadBasic.All",
+            "id": "225db56b-15b2-4daa-acb3-0eec2bbe4849"
+        },
+        {
+            "name": "MultiTenantOrganization.ReadWrite.All",
+            "id": "77af1528-84f3-4023-8d90-d219cd433108"
+        }
+    ],
+    "Reports": [
+        {
+            "name": "Reports.Read.All",
+            "id": "b0c61509-cfc3-42bd-9bd4-66d81785fee4"
+        },
+        {
+            "name": "Reports.Read.All",
+            "id": "02e97553-ed7b-43d0-ab3c-f8bace0d040c"
+        }
+    ],
+    "NetworkAccess": [
+        {
+            "name": "NetworkAccess.Read.All",
+            "id": "2f7013e0-ab4e-447f-a5e1-5d419950692d"
+        },
+        {
+            "name": "NetworkAccess.ReadWrite.All",
+            "id": "ae2df9c5-f18d-4ec4-a51b-bdeb807f177b"
+        }
+    ],
+    "NetworkAccessBranch": [
+        {
+            "name": "NetworkAccessBranch.Read.All",
+            "id": "4051c7fc-b429-4804-8d80-8f1f8c24a6f7"
+        },
+        {
+            "name": "NetworkAccessBranch.ReadWrite.All",
+            "id": "b8a36cc2-b810-461a-baa4-a7281e50bd5c"
+        }
+    ],
+    "NetworkAccessPolicy": [
+        {
+            "name": "NetworkAccessPolicy.Read.All",
+            "id": "ba22922b-752c-446f-89d7-a2d92398fceb"
+        },
+        {
+            "name": "NetworkAccessPolicy.ReadWrite.All",
+            "id": "b1fbad0f-ef6e-42ed-8676-bca7fa3e7291"
+        }
+    ],
+    "Notes": [
+        {
+            "name": "Notes.Read.All",
+            "id": "dfabfca6-ee36-4db2-8208-7a28381419b3"
+        },
+        {
+            "name": "Notes.ReadWrite.All",
+            "id": "64ac0503-b4fa-45d9-b544-71a463f05da0"
+        },
+        {
+            "name": "Notes.ReadWrite.CreatedByApp",
+            "id": "ed68249d-017c-4df5-9113-e684c7f8760b"
+        }
+    ],
+    "Notifications": [
+        {
+            "name": "Notifications.ReadWrite.CreatedByApp",
+            "id": "89497502-6e42-46a2-8cb2-427fd3df970a"
+        }
+    ],
+    "OnlineMeetingArtifact": [
+        {
+            "name": "OnlineMeetingArtifact.Read.All",
+            "id": "110e5abb-a10c-4b59-8b55-9b4daa4ef743"
+        }
+    ],
+    "OnlineMeetingRecording": [
+        {
+            "name": "OnlineMeetingRecording.Read.All",
+            "id": "190c2bb6-1fdd-4fec-9aa2-7d571b5e1fe3"
+        }
+    ],
+    "OnlineMeetingTranscript": [
+        {
+            "name": "OnlineMeetingTranscript.Read.All",
+            "id": "30b87d18-ebb1-45db-97f8-82ccb1f0190c"
+        }
+    ],
+    "OnPremDirectorySynchronization": [
+        {
+            "name": "OnPremDirectorySynchronization.Read.All",
+            "id": "f6609722-4100-44eb-b747-e6ca0536989d"
+        },
+        {
+            "name": "OnPremDirectorySynchronization.ReadWrite.All",
+            "id": "c2d95988-7604-4ba1-aaed-38a5f82a51c7"
+        }
+    ],
+    "OnPremisesPublishingProfiles": [
+        {
+            "name": "OnPremisesPublishingProfiles.ReadWrite.All",
+            "id": "8c4d5184-71c2-4bf8-bb9d-bc3378c9ad42"
+        }
+    ],
+    "Organization": [
+        {
+            "name": "Organization.Read.All",
+            "id": "4908d5b9-3fb2-4b1e-9336-1888b7937185"
+        },
+        {
+            "name": "Organization.ReadWrite.All",
+            "id": "46ca0847-7e6b-426e-9775-ea810a948356"
+        }
+    ],
+    "OrganizationalBranding": [
+        {
+            "name": "OrganizationalBranding.Read.All",
+            "id": "9082f138-6f02-4f3a-9f4d-5f3c2ce5c688"
+        },
+        {
+            "name": "OrganizationalBranding.ReadWrite.All",
+            "id": "15ce63de-b141-4c9a-a9a5-241bf27c6aaf"
+        }
+    ],
+    "OrgContact": [
+        {
+            "name": "OrgContact.Read.All",
+            "id": "08432d1b-5911-483c-86df-7980af5cdee0"
+        }
+    ],
+    "AppsAndServices": [
+        {
+            "name": "AppsAndServices.Read.All",
+            "id": "1e9b7a7e-4d64-44ff-acf5-2e9651c1519f"
+        },
+        {
+            "name": "AppsAndServices.ReadWrite.All",
+            "id": "c167b0e7-47c0-48e8-9eee-9892f58018fa"
+        }
+    ],
+    "DynamicsVoice": [
+        {
+            "name": "DynamicsVoice.Read.All",
+            "id": "9862d930-5aec-4a98-8d4f-7277a8db9bcb"
+        },
+        {
+            "name": "DynamicsVoice.ReadWrite.All",
+            "id": "4cea26fb-6967-4234-82c4-c044414743f8"
+        }
+    ],
+    "Forms": [
+        {
+            "name": "Forms.Read.All",
+            "id": "210051a0-1ffc-435c-ae76-02d226d05752"
+        },
+        {
+            "name": "Forms.ReadWrite.All",
+            "id": "346c19ff-3fb2-4e81-87a0-bac9e33990c1"
+        }
+    ],
+    "Microsoft365Install": [
+        {
+            "name": "Microsoft365Install.Read.All",
+            "id": "8cbdb9f6-9c2e-451a-814d-ec606e5d0212"
+        },
+        {
+            "name": "Microsoft365Install.ReadWrite.All",
+            "id": "1ff35e91-19eb-42d8-aa2d-cc9891127ae5"
+        }
+    ],
+    "Todo": [
+        {
+            "name": "Todo.Read.All",
+            "id": "7ff96f41-f022-45ba-acd8-ef3f03063d6b"
+        },
+        {
+            "name": "Todo.ReadWrite.All",
+            "id": "087502c2-5263-433e-abe3-8f77231a0627"
+        }
+    ],
+    "PartnerBilling": [
+        {
+            "name": "PartnerBilling.Read.All",
+            "id": "8804798e-5934-4e30-8ce3-ef88257cecd4"
+        }
+    ],
+    "PartnerSecurity": [
+        {
+            "name": "PartnerSecurity.Read.All",
+            "id": "5567b981-0bf1-4796-9038-0648b46e116d"
+        },
+        {
+            "name": "PartnerSecurity.ReadWrite.All",
+            "id": "0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5"
+        }
+    ],
+    "PendingExternalUserProfile": [
+        {
+            "name": "PendingExternalUserProfile.Read.All",
+            "id": "d88fd3fb-53d3-4c1c-8c39-787fcac2ed7a"
+        },
+        {
+            "name": "PendingExternalUserProfile.ReadWrite.All",
+            "id": "93a1fb28-c908-4826-904e-0c74ad352b73"
+        }
+    ],
+    "People": [
+        {
+            "name": "People.Read.All",
+            "id": "b89f9189-71a5-4e70-b041-9887f0bc7e4a"
+        }
+    ],
+    "PeopleSettings": [
+        {
+            "name": "PeopleSettings.Read.All",
+            "id": "ec762c5f-388b-4b16-8693-ac1efbc611bc"
+        },
+        {
+            "name": "PeopleSettings.ReadWrite.All",
+            "id": "e67e6727-c080-415e-b521-e3f35d5248e9"
+        }
+    ],
+    "Place": [
+        {
+            "name": "Place.Read.All",
+            "id": "cb8f45a0-5c2e-4ea1-b803-84b870a7d7ec"
+        },
+        {
+            "name": "Place.ReadWrite.All",
+            "id": "4c06a06a-098a-4063-868e-5dfee3827264"
+        }
+    ],
+    "PlaceDevice": [
+        {
+            "name": "PlaceDevice.Read.All",
+            "id": "4c7f93d2-6b0b-4e05-91aa-87842f0a2142"
+        },
+        {
+            "name": "PlaceDevice.ReadWrite.All",
+            "id": "eafd6a71-e95a-4f8a-bb6e-fb84ab7fbd9e"
+        }
+    ],
+    "Policy": [
+        {
+            "name": "Policy.Read.All",
+            "id": "572fea84-0151-49b2-9301-11cb16974376"
+        },
+        {
+            "name": "Policy.Read.ConditionalAccess",
+            "id": "633e0fce-8c58-4cfb-9495-12bbd5a24f7c"
+        },
+        {
+            "name": "Policy.Read.IdentityProtection",
+            "id": "d146432f-b803-4ed4-8d42-ba74193a6ede"
+        },
+        {
+            "name": "Policy.Read.PermissionGrant",
+            "id": "414de6ea-2d92-462f-b120-6e2a809a6d01"
+        },
+        {
+            "name": "Policy.ReadWrite.AccessReview",
+            "id": "4f5bc9c8-ea54-4772-973a-9ca119cb0409"
+        },
+        {
+            "name": "Policy.ReadWrite.ApplicationConfiguration",
+            "id": "b27add92-efb2-4f16-84f5-8108ba77985c"
+        },
+        {
+            "name": "Policy.ReadWrite.AuthenticationFlows",
+            "id": "edb72de9-4252-4d03-a925-451deef99db7"
+        },
+        {
+            "name": "Policy.ReadWrite.AuthenticationMethod",
+            "id": "7e823077-d88e-468f-a337-e18f1f0e6c7c"
+        },
+        {
+            "name": "Policy.ReadWrite.Authorization",
+            "id": "edd3c878-b384-41fd-95ad-e7407dd775be"
+        },
+        {
+            "name": "Policy.ReadWrite.ConditionalAccess",
+            "id": "ad902697-1014-4ef5-81ef-2b4301988e8c"
+        },
+        {
+            "name": "Policy.ReadWrite.ConsentRequest",
+            "id": "4d135e65-66b8-41a8-9f8b-081452c91774"
+        },
+        {
+            "name": "Policy.ReadWrite.CrossTenantAccess",
+            "id": "014b43d0-6ed4-4fc6-84dc-4b6f7bae7d85"
+        },
+        {
+            "name": "Policy.ReadWrite.DeviceConfiguration",
+            "id": "40b534c3-9552-4550-901b-23879c90bcf9"
+        },
+        {
+            "name": "Policy.ReadWrite.ExternalIdentities",
+            "id": "b5219784-1215-45b5-b3f1-88fe1081f9c0"
+        },
+        {
+            "name": "Policy.ReadWrite.FeatureRollout",
+            "id": "92a38652-f13b-4875-bc77-6e1dbb63e1b2"
+        },
+        {
+            "name": "Policy.ReadWrite.FedTokenValidation",
+            "id": "be1be369-4540-4ac9-8928-79de99f70d8f"
+        },
+        {
+            "name": "Policy.ReadWrite.IdentityProtection",
+            "id": "7256e131-3efb-4323-9854-cf41c6021770"
+        },
+        {
+            "name": "Policy.ReadWrite.MobilityManagement",
+            "id": "a8ead177-1889-4546-9387-f25e658e2a79"
+        },
+        {
+            "name": "Policy.ReadWrite.PermissionGrant",
+            "id": "2672f8bb-fd5e-42e0-85e1-ec764dd2614e"
+        },
+        {
+            "name": "Policy.ReadWrite.SecurityDefaults",
+            "id": "0b2a744c-2abf-4f1e-ad7e-17a087e2be99"
+        },
+        {
+            "name": "Policy.ReadWrite.TrustFramework",
+            "id": "cefba324-1a70-4a6e-9c1d-fd670b7ae392"
+        }
+    ],
+    "POP": [
+        {
+            "name": "POP.AccessAsUser.All",
+            "id": "d7b7f2d9-0f45-4ea1-9d42-e50810c06991"
+        }
+    ],
+    "Presence": [
+        {
+            "name": "Presence.Read.All",
+            "id": "9c7a330d-35b3-4aa1-963d-cb2b9f927841"
+        }
+    ],
+    "PrintConnector": [
+        {
+            "name": "PrintConnector.Read.All",
+            "id": "d69c2d6d-4f72-4f99-a6b9-663e32f8cf68"
+        },
+        {
+            "name": "PrintConnector.ReadWrite.All",
+            "id": "79ef9967-7d59-4213-9c64-4b10687637d8"
+        }
+    ],
+    "Printer": [
+        {
+            "name": "Printer.FullControl.All",
+            "id": "93dae4bd-43a1-4a23-9a1a-92957e1d9121"
+        },
+        {
+            "name": "Printer.Read.All",
+            "id": "3a736c8a-018e-460a-b60c-863b2683e8bf"
+        },
+        {
+            "name": "Printer.ReadWrite.All",
+            "id": "89f66824-725f-4b8f-928e-e1c5258dc565"
+        }
+    ],
+    "PrinterShare": [
+        {
+            "name": "PrinterShare.Read.All",
+            "id": "ed11134d-2f3f-440d-a2e1-411efada2502"
+        },
+        {
+            "name": "PrinterShare.ReadBasic.All",
+            "id": "5fa075e9-b951-4165-947b-c63396ff0a37"
+        },
+        {
+            "name": "PrinterShare.ReadWrite.All",
+            "id": "06ceea37-85e2-40d7-bec3-91337a46038f"
+        }
+    ],
+    "PrintJob": [
+        {
+            "name": "PrintJob.Read.All",
+            "id": "afdd6933-a0d8-40f7-bd1a-b5d778e8624b"
+        },
+        {
+            "name": "PrintJob.ReadBasic.All",
+            "id": "04ce8d60-72ce-4867-85cf-6d82f36922f3"
+        },
+        {
+            "name": "PrintJob.ReadWrite.All",
+            "id": "036b9544-e8c5-46ef-900a-0646cc42b271"
+        },
+        {
+            "name": "PrintJob.ReadWriteBasic.All",
+            "id": "3a0db2f6-0d2a-4c19-971b-49109b19ad3d"
+        }
+    ],
+    "PrintSettings": [
+        {
+            "name": "PrintSettings.Read.All",
+            "id": "490f32fd-d90f-4dd7-a601-ff6cdc1a3f6c"
+        },
+        {
+            "name": "PrintSettings.ReadWrite.All",
+            "id": "9ccc526a-c51c-4e5c-a1fd-74726ef50b8f"
+        }
+    ],
+    "PrivilegedAccess": [
+        {
+            "name": "PrivilegedAccess.Read.AzureAD",
+            "id": "b3a539c9-59cb-4ad5-825a-041ddbdc2bdb"
+        },
+        {
+            "name": "PrivilegedAccess.Read.AzureADGroup",
+            "id": "d329c81c-20ad-4772-abf9-3f6fdb7e5988"
+        },
+        {
+            "name": "PrivilegedAccess.Read.AzureResources",
+            "id": "1d89d70c-dcac-4248-b214-903c457af83a"
+        },
+        {
+            "name": "PrivilegedAccess.ReadWrite.AzureAD",
+            "id": "3c3c74f5-cdaa-4a97-b7e0-4e788bfcfb37"
+        },
+        {
+            "name": "PrivilegedAccess.ReadWrite.AzureADGroup",
+            "id": "32531c59-1f32-461f-b8df-6f8a3b89f73b"
+        },
+        {
+            "name": "PrivilegedAccess.ReadWrite.AzureResources",
+            "id": "a84a9652-ffd3-496e-a991-22ba5529156a"
+        }
+    ],
+    "PrivilegedAssignmentSchedule": [
+        {
+            "name": "PrivilegedAssignmentSchedule.Read.AzureADGroup",
+            "id": "02a32cc4-7ab5-4b58-879a-0586e0f7c495"
+        },
+        {
+            "name": "PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup",
+            "id": "06dbc45d-6708-4ef0-a797-f797ee68bf4b"
+        }
+    ],
+    "PrivilegedEligibilitySchedule": [
+        {
+            "name": "PrivilegedEligibilitySchedule.Read.AzureADGroup",
+            "id": "8f44f93d-ecef-46ae-a9bf-338508d44d6b"
+        },
+        {
+            "name": "PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup",
+            "id": "ba974594-d163-484e-ba39-c330d5897667"
+        }
+    ],
+    "ProfilePhoto": [
+        {
+            "name": "ProfilePhoto.Read.All",
+            "id": "469cd065-729e-4dee-b1fa-d92e0fab6310"
+        },
+        {
+            "name": "ProfilePhoto.ReadWrite.All",
+            "id": "f5b24df7-511e-48bb-ae88-643f023b55e1"
+        }
+    ],
+    "ProgramControl": [
+        {
+            "name": "ProgramControl.Read.All",
+            "id": "c492a2e1-2f8f-4caa-b076-99bbf6e40fe4"
+        },
+        {
+            "name": "ProgramControl.ReadWrite.All",
+            "id": "50fd364f-9d93-4ae1-b170-300e87cccf84"
+        }
+    ],
+    "PublicKeyInfrastructure": [
+        {
+            "name": "PublicKeyInfrastructure.Read.All",
+            "id": "04a4b2a2-3f26-4fc8-87ee-9c46e68db175"
+        },
+        {
+            "name": "PublicKeyInfrastructure.ReadWrite.All",
+            "id": "3591b7f3-dba8-4bad-b667-7a64bd4f2b83"
+        }
+    ],
+    "QnA": [
+        {
+            "name": "QnA.Read.All",
+            "id": "f73fa04f-b9a5-4df9-8843-993ce928925e"
+        }
+    ],
+    "RecordsManagement": [
+        {
+            "name": "RecordsManagement.Read.All",
+            "id": "07f995eb-fc67-4522-ad66-2b8ca8ea3efd"
+        },
+        {
+            "name": "RecordsManagement.ReadWrite.All",
+            "id": "f2833d75-a4e6-40ab-86d4-6dfe73c97605"
+        }
+    ],
+    "ReportSettings": [
+        {
+            "name": "ReportSettings.Read.All",
+            "id": "84fac5f4-33a9-4100-aa38-a20c6d29e5e7"
+        },
+        {
+            "name": "ReportSettings.ReadWrite.All",
+            "id": "b955410e-7715-4a88-a940-dfd551018df3"
+        }
+    ],
+    "RoleAssignmentSchedule": [
+        {
+            "name": "RoleAssignmentSchedule.Read.Directory",
+            "id": "344a729c-0285-42c6-9014-f12b9b8d6129"
+        },
+        {
+            "name": "RoleAssignmentSchedule.ReadWrite.Directory",
+            "id": "8c026be3-8e26-4774-9372-8d5d6f21daff"
+        }
+    ],
+    "RoleEligibilitySchedule": [
+        {
+            "name": "RoleEligibilitySchedule.Read.Directory",
+            "id": "eb0788c2-6d4e-4658-8c9e-c0fb8053f03d"
+        },
+        {
+            "name": "RoleEligibilitySchedule.ReadWrite.Directory",
+            "id": "62ade113-f8e0-4bf9-a6ba-5acb31db32fd"
+        }
+    ],
+    "RoleManagement": [
+        {
+            "name": "RoleManagement.Read.All",
+            "id": "48fec646-b2ba-4019-8681-8eb31435aded"
+        },
+        {
+            "name": "RoleManagement.Read.CloudPC",
+            "id": "9619b88a-8a25-48a7-9571-d23be0337a79"
+        },
+        {
+            "name": "RoleManagement.Read.Directory",
+            "id": "741c54c3-0c1e-44a1-818b-3f97ab4e8c83"
+        },
+        {
+            "name": "RoleManagement.Read.Exchange",
+            "id": "3bc15058-7858-4141-b24f-ae43b4e80b52"
+        },
+        {
+            "name": "RoleManagement.ReadWrite.CloudPC",
+            "id": "501d06f8-07b8-4f18-b5c6-c191a4af7a82"
+        },
+        {
+            "name": "RoleManagement.ReadWrite.Directory",
+            "id": "d01b97e9-cbc0-49fe-810a-750afd5527a3"
+        },
+        {
+            "name": "RoleManagement.ReadWrite.Exchange",
+            "id": "c1499fe0-52b1-4b22-bed2-7a244e0e879f"
+        }
+    ],
+    "RoleManagementAlert": [
+        {
+            "name": "RoleManagementAlert.Read.Directory",
+            "id": "cce71173-f76d-446e-97ff-efb2d82e11b1"
+        },
+        {
+            "name": "RoleManagementAlert.ReadWrite.Directory",
+            "id": "435644c6-a5b1-40bf-8f52-fe8e5b53e19c"
+        }
+    ],
+    "RoleManagementPolicy": [
+        {
+            "name": "RoleManagementPolicy.Read.AzureADGroup",
+            "id": "7e26fdff-9cb1-4e56-bede-211fe0e420e8"
+        },
+        {
+            "name": "RoleManagementPolicy.Read.Directory",
+            "id": "3de2cdbe-0ff5-47d5-bdee-7f45b4749ead"
+        },
+        {
+            "name": "RoleManagementPolicy.ReadWrite.AzureADGroup",
+            "id": "0da165c7-3f15-4236-b733-c0b0f6abe41d"
+        },
+        {
+            "name": "RoleManagementPolicy.ReadWrite.Directory",
+            "id": "1ff1be21-34eb-448c-9ac9-ce1f506b2a68"
+        }
+    ],
+    "Schedule": [
+        {
+            "name": "Schedule.Read.All",
+            "id": "fccf6dd8-5706-49fa-811f-69e2e1b585d0"
+        },
+        {
+            "name": "Schedule.ReadWrite.All",
+            "id": "63f27281-c9d9-4f29-94dd-6942f7f1feb0"
+        }
+    ],
+    "SchedulePermissions": [
+        {
+            "name": "SchedulePermissions.ReadWrite.All",
+            "id": "07919803-6073-4cd8-bc55-28077db0ee10"
+        }
+    ],
+    "SearchConfiguration": [
+        {
+            "name": "SearchConfiguration.Read.All",
+            "id": "7d307522-aa38-4cd0-bd60-90c6f0ac50bd"
+        },
+        {
+            "name": "SearchConfiguration.ReadWrite.All",
+            "id": "b1a7d408-cab0-47d2-a2a5-a74a3733600d"
+        }
+    ],
+    "SecurityActions": [
+        {
+            "name": "SecurityActions.Read.All",
+            "id": "1638cddf-07a4-4de2-8645-69c96cacad73"
+        },
+        {
+            "name": "SecurityActions.ReadWrite.All",
+            "id": "dc38509c-b87d-4da0-bd92-6bec988bac4a"
+        }
+    ],
+    "SecurityAlert": [
+        {
+            "name": "SecurityAlert.Read.All",
+            "id": "bc257fb8-46b4-4b15-8713-01e91bfbe4ea"
+        },
+        {
+            "name": "SecurityAlert.ReadWrite.All",
+            "id": "471f2a7f-2a42-4d45-a2bf-594d0838070d"
+        }
+    ],
+    "SecurityAnalyzedMessage": [
+        {
+            "name": "SecurityAnalyzedMessage.Read.All",
+            "id": "53e6783e-b127-4a35-ab3a-6a52d80a9077"
+        },
+        {
+            "name": "SecurityAnalyzedMessage.ReadWrite.All",
+            "id": "48eb8c83-6e58-46e7-a6d3-8805822f5940"
+        }
+    ],
+    "SecurityEvents": [
+        {
+            "name": "SecurityEvents.Read.All",
+            "id": "64733abd-851e-478a-bffb-e47a14b18235"
+        },
+        {
+            "name": "SecurityEvents.ReadWrite.All",
+            "id": "6aedf524-7e1c-45a7-bd76-ded8cab8d0fc"
+        }
+    ],
+    "SecurityIdentitiesHealth": [
+        {
+            "name": "SecurityIdentitiesHealth.Read.All",
+            "id": "a0d0da43-a6df-4416-b63d-99c79991aae8"
+        },
+        {
+            "name": "SecurityIdentitiesHealth.ReadWrite.All",
+            "id": "53e51eec-2d9b-4990-97f3-c9aa5d5652c3"
+        }
+    ],
+    "SecurityIdentitiesSensors": [
+        {
+            "name": "SecurityIdentitiesSensors.Read.All",
+            "id": "2c221239-7c5c-4b30-9355-d84663bfcd96"
+        },
+        {
+            "name": "SecurityIdentitiesSensors.ReadWrite.All",
+            "id": "087c3ad9-c2ca-4b82-9885-d5e25ce9e183"
+        }
+    ],
+    "SecurityIncident": [
+        {
+            "name": "SecurityIncident.Read.All",
+            "id": "b9abcc4f-94fc-4457-9141-d20ce80ec952"
+        },
+        {
+            "name": "SecurityIncident.ReadWrite.All",
+            "id": "128ca929-1a19-45e6-a3b8-435ec44a36ba"
+        }
+    ],
+    "Microsoft365Web": [
+        {
+            "name": "Microsoft365Web.Read.All",
+            "id": "d74c75b1-d5a9-479d-902d-92f8f99182c1"
+        }
+    ],
+    "Teams": [
+        {
+            "name": "Teams.Read.All",
+            "id": "404d76f0-e10e-460a-92be-ef19600c54d1"
+        }
+    ],
+    "ServiceHealth": [
+        {
+            "name": "ServiceHealth.Read.All",
+            "id": "55896846-df78-47a7-aa94-8d3d4442ca7f"
+        }
+    ],
+    "ServiceMessage": [
+        {
+            "name": "ServiceMessage.Read.All",
+            "id": "eda39fa6-f8cf-4c3c-a909-432c683e4c9b"
+        }
+    ],
+    "ServicePrincipalEndpoint": [
+        {
+            "name": "ServicePrincipalEndpoint.Read.All",
+            "id": "9f9ce928-e038-4e3b-8faf-7b59049a8ddc"
+        },
+        {
+            "name": "ServicePrincipalEndpoint.ReadWrite.All",
+            "id": "7297d82c-9546-4aed-91df-3d4f0a9b3ff0"
+        }
+    ],
+    "SharePointTenantSettings": [
+        {
+            "name": "SharePointTenantSettings.Read.All",
+            "id": "2ef70e10-5bfd-4ede-a5f6-67720500b258"
+        },
+        {
+            "name": "SharePointTenantSettings.ReadWrite.All",
+            "id": "aa07f155-3612-49b8-a147-6c590df35536"
+        }
+    ],
+    "Sites": [
+        {
+            "name": "Sites.FullControl.All",
+            "id": "5a54b8b3-347c-476d-8f8e-42d5c7424d29"
+        },
+        {
+            "name": "Sites.Manage.All",
+            "id": "65e50fdc-43b7-4915-933e-e8138f11f40a"
+        },
+        {
+            "name": "Sites.Read.All",
+            "id": "205e70e5-aba6-4c52-a976-6d2d46c48043"
+        },
+        {
+            "name": "Sites.ReadWrite.All",
+            "id": "89fe6a52-be36-487e-b7d8-d061c450a026"
+        }
+    ],
+    "SpiffeTrustDomain": [
+        {
+            "name": "SpiffeTrustDomain.Read.All",
+            "id": "9b4aa4b1-aaf3-41b7-b743-698b27e77ff6"
+        },
+        {
+            "name": "SpiffeTrustDomain.ReadWrite.All",
+            "id": "8ba47079-8c47-4bfe-b2ce-13f28ef37247"
+        }
+    ],
+    "SubjectRightsRequest": [
+        {
+            "name": "SubjectRightsRequest.Read.All",
+            "id": "9c3af74c-fd0f-4db4-b17a-71939e2a9d77"
+        },
+        {
+            "name": "SubjectRightsRequest.ReadWrite.All",
+            "id": "2b8fcc74-bce1-4ae3-a0e8-60c53739299d"
+        }
+    ],
+    "Subscription": [
+        {
+            "name": "Subscription.Read.All",
+            "id": "5f88184c-80bb-4d52-9ff2-757288b2e9b7"
+        }
+    ],
+    "Synchronization": [
+        {
+            "name": "Synchronization.Read.All",
+            "id": "7aa02aeb-824f-4fbe-a3f7-611f751f5b55"
+        },
+        {
+            "name": "Synchronization.ReadWrite.All",
+            "id": "7bb27fa3-ea8f-4d67-a916-87715b6188bd"
+        }
+    ],
+    "Tasks": [
+        {
+            "name": "Tasks.Read.Shared",
+            "id": "88d21fd4-8e5a-4c32-b5e2-4a1c95f34f72"
+        },
+        {
+            "name": "Tasks.ReadWrite.Shared",
+            "id": "c5ddf11b-c114-4886-8558-8a4e557cd52b"
+        }
+    ],
+    "Team": [
+        {
+            "name": "Team.ReadBasic.All",
+            "id": "485be79e-c497-4b35-9400-0e3fa7f2a5d4"
+        }
+    ],
+    "TeamMember": [
+        {
+            "name": "TeamMember.Read.All",
+            "id": "2497278c-d82d-46a2-b1ce-39d4cdde5570"
+        },
+        {
+            "name": "TeamMember.ReadWrite.All",
+            "id": "4a06efd2-f825-4e34-813e-82a57b03d1ee"
+        },
+        {
+            "name": "TeamMember.ReadWriteNonOwnerRole.All",
+            "id": "2104a4db-3a2f-4ea0-9dba-143d457dc666"
+        }
+    ],
+    "TeamSettings": [
+        {
+            "name": "TeamSettings.Read.All",
+            "id": "48638b3c-ad68-4383-8ac4-e6880ee6ca57"
+        },
+        {
+            "name": "TeamSettings.ReadWrite.All",
+            "id": "39d65650-9d3e-4223-80db-a335590d027e"
+        }
+    ],
+    "TeamsTab": [
+        {
+            "name": "TeamsTab.Read.All",
+            "id": "59dacb05-e88d-4c13-a684-59f1afc8cc98"
+        },
+        {
+            "name": "TeamsTab.ReadWrite.All",
+            "id": "b98bfd41-87c6-45cc-b104-e2de4f0dafb9"
+        }
+    ],
+    "TeamsUserConfiguration": [
+        {
+            "name": "TeamsUserConfiguration.Read.All",
+            "id": "5c469ce4-dab5-4afd-b9de-14f1ba4004a7"
+        }
+    ],
+    "Teamwork": [
+        {
+            "name": "Teamwork.Read.All",
+            "id": "594f4bb6-c083-4cf9-8aa8-213823bdf351"
+        }
+    ],
+    "TeamworkAppSettings": [
+        {
+            "name": "TeamworkAppSettings.Read.All",
+            "id": "44e060c4-bbdc-4256-a0b9-dcc0396db368"
+        },
+        {
+            "name": "TeamworkAppSettings.ReadWrite.All",
+            "id": "87c556f0-2bd9-4eed-bd74-5dd8af6eaf7e"
+        }
+    ],
+    "TeamworkDevice": [
+        {
+            "name": "TeamworkDevice.Read.All",
+            "id": "b659488b-9d28-4208-b2be-1c6652b3c970"
+        },
+        {
+            "name": "TeamworkDevice.ReadWrite.All",
+            "id": "ddd97ecb-5c31-43db-a235-0ee20e635c40"
+        }
+    ],
+    "TeamworkUserInteraction": [
+        {
+            "name": "TeamworkUserInteraction.Read.All",
+            "id": "b4d26916-07e0-4daf-9096-9f6d9174aa96"
+        }
+    ],
+    "TermStore": [
+        {
+            "name": "TermStore.Read.All",
+            "id": "297f747b-0005-475b-8fef-c890f5152b38"
+        },
+        {
+            "name": "TermStore.ReadWrite.All",
+            "id": "6c37c71d-f50f-4bff-8fd3-8a41da390140"
+        }
+    ],
+    "ThreatAssessment": [
+        {
+            "name": "ThreatAssessment.ReadWrite.All",
+            "id": "cac97e40-6730-457d-ad8d-4852fddab7ad"
+        }
+    ],
+    "ThreatHunting": [
+        {
+            "name": "ThreatHunting.Read.All",
+            "id": "b152eca8-ea73-4a48-8c98-1a6742673d99"
+        }
+    ],
+    "ThreatIndicators": [
+        {
+            "name": "ThreatIndicators.Read.All",
+            "id": "9cc427b4-2004-41c5-aa22-757b755e9796"
+        },
+        {
+            "name": "ThreatIndicators.ReadWrite.OwnedBy",
+            "id": "91e7d36d-022a-490f-a748-f8e011357b42"
+        }
+    ],
+    "ThreatIntelligence": [
+        {
+            "name": "ThreatIntelligence.Read.All",
+            "id": "f266d9c0-ccb9-4fb8-a228-01ac0d8d6627"
+        }
+    ],
+    "ThreatSubmission": [
+        {
+            "name": "ThreatSubmission.Read.All",
+            "id": "7083913a-4966-44b6-9886-c5822a5fd910"
+        },
+        {
+            "name": "ThreatSubmission.ReadWrite.All",
+            "id": "8458e264-4eb9-4922-abe9-768d58f13c7f"
+        }
+    ],
+    "ThreatSubmissionPolicy": [
+        {
+            "name": "ThreatSubmissionPolicy.ReadWrite.All",
+            "id": "059e5840-5353-4c68-b1da-666a033fc5e8"
+        }
+    ],
+    "Topic": [
+        {
+            "name": "Topic.Read.All",
+            "id": "79c4c76f-409a-4f98-884d-e2c09291ec26"
+        }
+    ],
+    "TrustFrameworkKeySet": [
+        {
+            "name": "TrustFrameworkKeySet.Read.All",
+            "id": "7ad34336-f5b1-44ce-8682-31d7dfcd9ab9"
+        },
+        {
+            "name": "TrustFrameworkKeySet.ReadWrite.All",
+            "id": "39244520-1e7d-4b4a-aee0-57c65826e427"
+        }
+    ],
+    "UnifiedGroupMember": [
+        {
+            "name": "UnifiedGroupMember.Read.AsGuest",
+            "id": "73e75199-7c3e-41bb-9357-167164dbb415"
+        }
+    ],
+    "ConvertToInternal": [
+        {
+            "name": "ConvertToInternal.ReadWrite.All",
+            "id": "550e695c-7511-40f4-ac79-e8fb9c82552d"
+        }
+    ],
+    "LifeCycleInfo": [
+        {
+            "name": "LifeCycleInfo.Read.All",
+            "id": "ed8d2a04-0374-41f1-aefe-da8ac87ccc87"
+        },
+        {
+            "name": "LifeCycleInfo.ReadWrite.All",
+            "id": "7ee7473e-bd4b-4c9f-987c-bd58481f5fa2"
+        }
+    ],
+    "User": [
+        {
+            "name": "User.EnableDisableAccount.All",
+            "id": "f92e74e7-2563-467f-9dd0-902688cb5863"
+        },
+        {
+            "name": "User.Export.All",
+            "id": "405a51b5-8d8d-430b-9842-8be4b0e9f324"
+        },
+        {
+            "name": "User.Invite.All",
+            "id": "63dd7cd9-b489-4adf-a28c-ac38b9a0f962"
+        },
+        {
+            "name": "User.ManageIdentities.All",
+            "id": "637d7bec-b31e-4deb-acc9-24275642a2c9"
+        },
+        {
+            "name": "User.Read.All",
+            "id": "a154be20-db9c-4678-8ab7-66f6cc099a59"
+        },
+        {
+            "name": "User.ReadBasic.All",
+            "id": "b340eb25-3456-403f-be2f-af7a0d370277"
+        },
+        {
+            "name": "User.ReadWrite.All",
+            "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4"
+        },
+        {
+            "name": "User.RevokeSessions.All",
+            "id": "fc30e98b-8810-4501-81f5-c20a3196387b"
+        }
+    ],
+    "UserActivity": [
+        {
+            "name": "UserActivity.ReadWrite.CreatedByApp",
+            "id": "47607519-5fb1-47d9-99c7-da4b48f369b1"
+        }
+    ],
+    "UserAuthenticationMethod": [
+        {
+            "name": "UserAuthenticationMethod.Read.All",
+            "id": "aec28ec7-4d02-4e8c-b864-50163aea77eb"
+        },
+        {
+            "name": "UserAuthenticationMethod.ReadWrite.All",
+            "id": "b7887744-6746-4312-813d-72daeaee7e2d"
+        }
+    ],
+    "UserNotification": [
+        {
+            "name": "UserNotification.ReadWrite.CreatedByApp",
+            "id": "26e2f3e8-b2a1-47fc-9620-89bb5b042024"
+        }
+    ],
+    "UserTimelineActivity": [
+        {
+            "name": "UserTimelineActivity.Write.CreatedByApp",
+            "id": "367492fc-594d-4972-a9b5-0d58c622c91c"
+        }
+    ],
+    "WindowsUpdates": [
+        {
+            "name": "WindowsUpdates.ReadWrite.All",
+            "id": "11776c0c-6138-4db3-a668-ee621bea2555"
+        }
+    ],
+    "WorkforceIntegration": [
+        {
+            "name": "WorkforceIntegration.Read.All",
+            "id": "f1ccd5a7-6383-466a-8db8-1a656f7d06fa"
+        },
+        {
+            "name": "WorkforceIntegration.ReadWrite.All",
+            "id": "08c4b377-0d23-4a8b-be2a-23c1c1d88545"
+        }
+    ]
+}

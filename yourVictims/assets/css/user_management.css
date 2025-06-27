@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+/* background-image: url('phishing.jpg'); */
+background: linear-gradient(90deg, #1a1a2e, #16213e); /* Darker gradient background */
+color: #ffffff; /* White text */
+text-align: center;
+padding: 20px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Custom font */
+font-size: 2.5rem; /* Larger font size */
+letter-spacing: 1.5px; /* Spacing between letters */
+text-transform: uppercase; /* Uppercase letters */
+}
+
+header h1 {
+    margin: 0;
+    background: -webkit-linear-gradient(#fff, #f8f9fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header h1:hover {
+    color: #f8f9fa;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ffffff; 
+}
+
+.sidebar .nav-link {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #708090;
+    border-radius: 4px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+input::placeholder, select {
+    font-style: italic;
+}
+
+.alert-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    width: 400px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.close-alert {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+}

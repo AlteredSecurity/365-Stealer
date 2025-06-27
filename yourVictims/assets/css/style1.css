@@ -1617,17 +1617,6 @@ a:focus {
 
 }
 
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  border: 3px solid #ff9d00;
-  z-index: 9;
-  width: 87.5%;
-  margin-left: 6.25%;
-  margin-top: 2%;
-}
-
 .token-popup{
   position: fixed;
   border: 3px solid #ff9d00;
@@ -1639,58 +1628,145 @@ a:focus {
   background-color: #cccccc;    
 }
 
-/* Add styles to the form container */
-.form-container {
-  background-image: url('../img/config-wall.png');
-  background-repeat: no-repeat; 
-  background-position: center;
-  padding: 0px 20px 0px 20px;    
-  background-color: white;
-  font-weight: bold;
-    
-}
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border: none;
-  background: rgba(221, 221, 221, 0.83);
 
-}
-
-.form-container input[type=url] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  border: none;
-  background: rgba(221, 221, 221, 0.83);
+.form-popup {
+	display: none;
+	position: fixed;
+	border: 3px solid #ff9d00;
+	z-index: 9;
+	width: 87.5%;
+	margin-left: 6.25%;
+	margin-top: 2%;
+  }
   
+  /* Add styles to the form container */
+  .form-container {
+	background-image: url('../img/config-wall.png');
+	background-repeat: no-repeat; 
+	background-position: center;
+	padding: 0px 20px 0px 20px;    
+	background-color: white;
+	font-weight: bold;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	border: none;
+	background: rgba(221, 221, 221, 0.83);
+  }
+  
+  .form-container input[type=url] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	border: none;
+	background: rgba(221, 221, 221, 0.83);
+  }
+  
+  /* Set a style for the buttons container */
+  .form-buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	width: 48%; /* Adjusted to make the buttons fit within the container */
+	margin-bottom: 10px;
+	opacity: 1;
+	transition: background-color 0.3s, color 0.3s; /* Added transition for smooth color change */
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: red;
+  }
+  
+  /* Add hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	background-color: #0056b3;
+	color: #000; /* Change text color to dark */
+  }
+  
+  .form-container .cancel:hover {
+	background-color: #d32f2f;
+	color: #000; /* Change text color to dark */
+  }
+  
+  
+  
+
+
+/* Modify */
+/* Basic styling for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 40%;
-  margin-bottom:10px;
-  opacity: 1;
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Limit the width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+/* Styling for form and button */
+form {
+    display: flex;
+    flex-direction: column;
+}
 
+input[type="number"] {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

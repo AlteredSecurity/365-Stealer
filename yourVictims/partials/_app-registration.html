@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Registration & Permission Mode</title>
+    <style>
+        .app-reg-container {
+            text-align: center;
+        }
+
+        .app-reg-button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .app-reg-button:hover {
+            background-color: #0056b3;
+        }
+
+        .app-reg-modal, .perm-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modals-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 600px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .modals-content h2 {
+            margin-top: 0;
+            font-size: 22px;
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .close-btn {
+            color: #333;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        .label {
+            text-align: left;
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .input-field, select {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .modals-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .modals-footer button {
+            width: 48%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .modals-footer button:hover {
+            background-color: #0056b3;
+        }
+
+        .modals-footer .back-btn {
+            background-color: #6c757d;
+        }
+
+        .modals-footer .back-btn:hover {
+            background-color: #565e64;
+        }
+
+        /* Styling for the permissions list */
+        .api-permissions-list {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .api-permissions-box p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Removing list-style bullet points */
+        .api-permissions-box p:last-child {
+            border-bottom: none;
+        }
+
+        /* Styling for the permissions list */
+        .checkboxes-container {
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .checkboxes-container h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .checkboxes-container label {
+            text-align: left;
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .checkboxes-container input[type="checkbox"] {
+            text-align: left;
+            margin-right: 8px;
+        }
+
+        .checkboxes-container label:hover {
+            text-align: left;
+            background-color: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        /* Placeholder styling */
+        ::placeholder {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <button id="appRegOpenModalBtn" style="margin:10px; background-color: #007bff; opacity: 0.9;" class="btn btn-xs">App Registration</button>
+
+    <!-- First Modal for App Registration -->
+    <div id="appRegModal" class="app-reg-modal">
+        <div class="modals-content">
+            <button class="close-btn" id="appRegCloseBtn">&times;</button>
+            <h2>App Registration</h2>
+
+            <label for="appRegTenantId" class="label">Tenant ID</label>
+            <input type="text" class="input-field" id="appRegTenantId" placeholder="Tenant ID" required>
+
+            <label for="appRegAppName" class="label">New App Registration Name</label>
+            <input type="text" class="input-field" id="appRegAppName" placeholder="New App Registration Name" required>
+
+            <label for="appRegRedirectUrl" class="label">Redirect URL</label>
+            <input type="url" class="input-field" id="appRegRedirectUrl" placeholder="https://localhost/login/authorized" required>
+
+            <div class="modals-footer">
+                <button id="appRegBackBtn" class="back-btn">Close</button>
+                <button id="appRegNextBtn" class="app-reg-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Modal for Permission Mode -->
+    <div id="permModal" class="perm-modal">
+        <div class="modals-content">
+            <button class="close-btn" id="permCloseBtn">&times;</button>
+            <h2>Select Permission Mode</h2>
+            
+            <label for="permissionMode" class="label">Permission Mode</label>
+            <select id="permissionMode" class="input-field">
+                <option value="" disabled selected>Select API Permission Mode</option>
+                <option value="low-impact">Low Impact (User.ReadBasic.All)</option>
+                <option value="default">Default API permissions (required by 365-Stealer)</option>
+                <option value="custom">Custom API permissions</option>
+            </select>
+
+            <!-- Default API Permissions List -->
+            <div id="apiPermissionsList" class="api-permissions-list">
+                <p><strong>Default API Permissions:</strong></p>
+                <div class="api-permissions-box">
+                    <p>Contacts.Read</p>
+                    <p>Files.ReadWrite.All</p>
+                    <p>Mail.Read</p>
+                    <p>Mail.Send</p>
+                    <p>MailboxSettings.ReadWrite</p>
+                    <p>Notes.Read.All</p>
+                    <p>User.Read</p>
+                    <p>User.ReadBasic.All</p>
+                </div>
+            </div>
+
+             <!-- Custom API Permissions Section -->
+             <div id="customApiPermissionsSection" class="custom-api-permissions" style="display:none;">
+                <label for="searchApi" class="label">Select Custom API Permissions:</label>
+                <input type="text" id="searchApi" class="input-field" placeholder="Search API Permissions..." />
+                <div id="checkboxesContainer" class="checkboxes-container"></div>
+            </div>
+
+            <div class="modals-footer">
+                <button id="permBackBtn" class="back-btn">Back</button>
+                <button id="permNextBtn" class="app-reg-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Modal for Authentication Method -->
+    <div id="authModal" class="perm-modal">
+        <div class="modals-content">
+            <button class="close-btn" id="authCloseBtn">&times;</button>
+            <h2>Select Authentication Method</h2>
+
+            <label for="authMethod" class="label">Authentication Method:</label>
+            <select id="authMethod" class="input-field" onchange="showNote()">
+                <option value="" disabled selected>Select Authentication Method</option>
+                <option value="ROPC_flow">ROPC flow (requires Username and Password)</option>
+                <option value="oauth-client-secret">OAuth with Client Secret (requires Client ID and Client Secret)</option>
+            </select>
+			
+			<div id="ropc-note" style="display:none; margin-top: 10px; color: red;">
+				Note: After Microsoft’s mandatory MFA enforcement, ROPC (Resource Owner Password Credential) flow will not work.
+			</div>
+
+            <!-- userName and Password Fields (Hidden initially) -->
+            <div id="ropcFields" style="display:none; margin-top: 15px;">
+                <label for="userName" class="label">Email</label>
+                <input type="text" id="userName" class="input-field" placeholder="Enter Email" required>
+
+                <label for="userPassword" class="label">Password</label>
+                <input type="password" id="userPassword" class="input-field" placeholder="Enter Password" required>
+            </div>
+
+            <!-- Client ID and Client Secret Fields (Hidden initially) -->
+            <div id="oauthFields" style="display:none; margin-top: 15px;">
+                <label for="clientId" class="label">Client ID</label>
+                <input type="text" id="clientId" class="input-field" placeholder="Enter Client ID" required>
+
+                <label for="clientSecret" class="label">Client Secret</label>
+                <input type="password" id="clientSecret" class="input-field" placeholder="Enter Client Secret" required>
+            </div>
+
+            <div class="modals-footer">
+                <button id="authBackBtn" class="back-btn">Back</button>
+                <button id="authSubmitBtn" class="app-reg-button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Get elements for the first modal
+        const appRegOpenModalBtn = document.getElementById('appRegOpenModalBtn');
+        const appRegModal = document.getElementById('appRegModal');
+        const appRegCloseBtn = document.getElementById('appRegCloseBtn');
+        const appRegBackBtn = document.getElementById('appRegBackBtn');
+        const appRegNextBtn = document.getElementById('appRegNextBtn');
+
+        // Get elements for the second modal (Permission Mode)
+        const permModal = document.getElementById('permModal');
+        const permCloseBtn = document.getElementById('permCloseBtn');
+        const permBackBtn = document.getElementById('permBackBtn');
+        const permNextBtn = document.getElementById('permNextBtn');
+        const permissionModeSelect = document.getElementById('permissionMode');
+        const apiPermissionsList = document.getElementById('apiPermissionsList');
+
+        // Show first modal when "App Registration" button is clicked
+        appRegOpenModalBtn.addEventListener('click', function () {
+            appRegModal.style.display = 'flex';
+        });
+
+        // Close first modal when "X" button is clicked
+        appRegCloseBtn.addEventListener('click', function () {
+            appRegModal.style.display = 'none';
+        });
+
+        // Close the permission modal
+        permCloseBtn.addEventListener('click', function () {
+            permModal.style.display = 'none';
+        });
+
+        // Back to close the modals
+        appRegBackBtn.addEventListener('click', function () {
+            appRegModal.style.display = 'none';
+        });
+
+        // Show the second modal (Permission Mode) when "Next" is clicked
+        appRegNextBtn.addEventListener('click', function () {
+            const tenantIdField = document.getElementById('appRegTenantId');
+            const appNameField = document.getElementById('appRegAppName');
+            const redirectUrlField = document.getElementById('appRegRedirectUrl');
+
+            // Check if the Tenant ID field is empty
+            if (tenantIdField.value.trim() === '') {
+                alert('Tenant ID is required to proceed.');
+                tenantIdField.focus();
+                return;
+            }else if (appNameField.value.trim() === '') {
+                alert('App Name is required to proceed.');
+                appNameField.focus();
+                return;
+            }else if (redirectUrlField.value.trim() === '') {
+                alert('Redirect URL is required to proceed.');
+                redirectUrlField.focus();
+                return;
+            }
+            appRegModal.style.display = 'none';  // Close the first modal
+            permModal.style.display = 'flex';   // Show the second modal
+        });
+
+        // Go back to the first modal from the second modal
+        permBackBtn.addEventListener('click', function () {
+            permModal.style.display = 'none';
+            appRegModal.style.display = 'flex'; // Show the first modal again
+        });
+
+        // Show the API permissions list when "Default API permissions" is selected
+        permissionModeSelect.addEventListener('change', function () {
+            if (permissionModeSelect.value === 'default') {
+                apiPermissionsList.style.display = 'block';
+            } else {
+                apiPermissionsList.style.display = 'none';
+            }
+        });
+
+        // Fetch JSON from local directory
+        async function fetchJsonData() {
+            try {
+                const response = await fetch('./../API-Permissions.json'); // Path to your local JSON file
+                if (!response.ok) throw new Error('Failed to fetch JSON data');
+                return await response.json();
+            } catch (error) {
+                console.error('Error fetching JSON: Error', error);
+                return null;
+            }
+        }
+
+        let selectedPermissionIds = [];
+        const customApiPermissionsSection = document.getElementById('customApiPermissionsSection');
+        const searchApi = document.getElementById('searchApi');
+        const checkboxesContainer = document.getElementById('checkboxesContainer');
+
+        // Show custom API permissions section if "Custom API permissions" is selected
+        permissionModeSelect.addEventListener('change', async function() {
+            if (permissionModeSelect.value === 'custom') {
+                customApiPermissionsSection.style.display = 'block';
+                apiPermissionsList.style.display = 'none';
+                const jsonData = await fetchJsonData();  // Fetch API permissions from the local file
+                if (jsonData) {
+                    displayApiPermissions(jsonData);  // Display API permissions
+                }
+            } else if (permissionModeSelect.value === 'default') {
+                apiPermissionsList.style.display = 'block';
+                customApiPermissionsSection.style.display = 'none';
+            } else {
+                apiPermissionsList.style.display = 'none';
+                customApiPermissionsSection.style.display = 'none';
+            }
+        });
+		
+		function showNote() {
+			const authMethod = document.getElementById("authMethod").value;
+			const note = document.getElementById("ropc-note");
+			note.style.display = authMethod === "ROPC_flow" ? "block" : "none";
+		}
+
+        // Display API permissions as checkboxes
+        function displayApiPermissions(data) {
+            checkboxesContainer.innerHTML = '';  // Clear previous results
+            for (const category in data) {
+                const categoryDiv = document.createElement('div');
+                const categoryTitle = document.createElement('h4');
+                categoryTitle.textContent = category;
+                categoryDiv.appendChild(categoryTitle);
+
+                data[category].forEach(permission => {
+                    const checkboxLabel = document.createElement('label');
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = permission.id;
+                    checkboxLabel.textContent = permission.name;
+                    checkboxLabel.insertBefore(checkbox, checkboxLabel.firstChild);
+
+                    checkbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            selectedPermissionIds.push(this.value);
+                        } else {
+                            selectedPermissionIds = selectedPermissionIds.filter(id => id !== this.value);
+                        }
+                    });
+
+                    categoryDiv.appendChild(checkboxLabel);
+                });
+
+                checkboxesContainer.appendChild(categoryDiv);
+            }
+        }
+
+        // Search and filter API permissions
+        searchApi.addEventListener('input', async function() {
+            const searchTerm = this.value.toLowerCase();
+            const jsonData = await fetchJsonData();
+            if (!jsonData) return;
+
+            const filteredData = {};
+            for (const category in jsonData) {
+                const filteredPermissions = jsonData[category].filter(permission =>
+                    permission.name.toLowerCase().includes(searchTerm)
+                );
+                if (filteredPermissions.length) {
+                    filteredData[category] = filteredPermissions;
+                }
+            }
+            displayApiPermissions(filteredData);
+        });
+
+        // Get elements for the third modal (Authentication Method)
+        const authModal = document.getElementById('authModal');
+        const authCloseBtn = document.getElementById('authCloseBtn');
+        const authBackBtn = document.getElementById('authBackBtn');
+        const authSubmitBtn = document.getElementById('authSubmitBtn');
+        const authMethodSelect = document.getElementById('authMethod');
+        const oauthFields = document.getElementById('oauthFields');
+        const ropcFields = document.getElementById('ropcFields');
+
+        // Show authentication modal after "Next" button is clicked in the second modal
+        permNextBtn.addEventListener('click', function () {
+            // Check if the user has selected an API permission mode
+            if (permissionModeSelect.value === '') {
+                alert('Please select an API Permission Mode to proceed.');
+                permissionModeSelect.focus();  // Focus on the Permission Mode dropdown
+                return;  // Prevent navigation to the next page
+            }
+            permModal.style.display = 'none';  // Close second modal
+            authModal.style.display = 'flex';  // Show authentication modal
+        });
+
+        // Close authentication modal
+        authCloseBtn.addEventListener('click', function () {
+            authModal.style.display = 'none';
+        });
+
+        // Show/hide OAuth fields based on the selected authentication method
+        authMethodSelect.addEventListener('change', function () {
+            if (authMethodSelect.value === 'oauth-client-secret') {
+                oauthFields.style.display = 'block';  // Show client ID and client secret fields
+                ropcFields.style.display = 'none'; // Hide UserName and Password fields
+            } else if (authMethodSelect.value === 'ROPC_flow')
+            {
+                oauthFields.style.display = 'none'; // Hide client ID and client secret fields
+                ropcFields.style.display = 'block'; // Show UserName and Password fields
+
+            }
+            else {
+                oauthFields.style.display = 'none';   // Hide client ID and client secret fields
+                ropcFields.style.display = 'none'; // Hide UserName and Password fields
+            }
+        });
+
+        // Go back to the previous modal
+        authBackBtn.addEventListener('click', function () {
+            authModal.style.display = 'none';
+            permModal.style.display = 'flex';  // Go back to the second modal
+        });
+
+        function closeCurrentModal() {
+            authModal.style.display = 'none';  // Assuming authModal is your current modal
+        }
+
+        // Function to open a new modal with the client ID and client secret
+        function openClientCredentialsModal(clientId, clientSecret) {
+            // Create a new modal for displaying client ID and client secret
+            const modal = document.createElement('div');
+            modal.classList.add('app-reg-modal'); 
+            modal.style.display = 'flex';  // Ensure it's visible
+
+            const modalContent = `
+                <div class="modals-content">
+                    <button class="close-btn" id="clientInfoCloseBtn">&times;</button>
+                    <h2>App Registration Successful</h2>
+                    <p><strong style="text-align: left;">Client ID:</strong> ${clientId}</p>
+                    <p><strong style="text-align: left;">Client Secret:</strong> ${clientSecret}</p>
+                    <p style="color: red; font-weight: bold;">Note: Please make sure to save the Client ID and Client Secret.</p>
+                </div>
+            `;
+
+            modal.innerHTML = modalContent;
+            document.body.appendChild(modal);  // Add modal to the document body
+
+            // Close the modal when the close button is clicked
+            const closeModal = () => {
+                modal.style.display = 'none';
+                modal.remove();  // Remove the modal from the DOM
+            };
+
+            document.getElementById('clientInfoCloseBtn').addEventListener('click', closeModal);
+        }
+
+        // Handle authentication submission and send data to PHP
+        authSubmitBtn.addEventListener('click', function () {
+            const tenantId = document.getElementById('appRegTenantId').value;
+            const appName = document.getElementById('appRegAppName').value;
+            const redirectUri = document.getElementById('appRegRedirectUrl').value;
+            let authMethod = document.getElementById('authMethod').value;
+            const customPermissions = selectedPermissionIds; // Assuming `selectedPermissionIds` is populated during API selection
+            let clientId = '';
+            let clientSecret = '';
+            let userName = '';
+            let userPassword = '';
+            let isDefaultPermissions = false;
+            let lowImpact = false;
+
+            // Prepare form data to be sent to PHP
+            const formData = new FormData();
+            formData.append('tenantId', tenantId); // Correct ID for Tenant ID
+            formData.append('appName', appName);   // Correct ID for App Name
+            formData.append('redirectUri', redirectUri);  // Correct ID for Redirect URL
+            
+            if (authMethod === 'oauth-client-secret') {
+                authMethod = 'oauth';
+                formData.append('authMethod', authMethod); // oauth
+                clientId = document.getElementById('clientId').value;
+                clientSecret = document.getElementById('clientSecret').value;
+                formData.append('clientId', clientId);
+                formData.append('clientSecret', clientSecret);
+            } else if (authMethod === 'ROPC_flow') {
+                userName = document.getElementById('userName').value;
+                userPassword = document.getElementById('userPassword').value;
+                formData.append('userName', userName);
+                formData.append('userPassword', userPassword);
+                formData.append('authMethod', authMethod); // ROPC_flow
+            }
+
+            // Check if the user has selected an authentication mode
+            if (authMethodSelect.value === '') {
+                alert('Please select an Authentication Method to proceed.');
+                authMethodSelect.focus();
+                return;
+            }
+            // If ROPC flow is selected, check if Email and Password are provided
+            if (authMethodSelect.value === 'ROPC_flow') {
+                if (userName === '') {
+                    const userNameField = document.getElementById('userName');
+                    alert('Please provide your Email for ROPC flow.');
+                    userNameField.focus();
+                    return;
+                }
+
+                if (userPassword === '') {
+                    const userPasswordField = document.getElementById('userPassword');
+                    alert('Please provide your Password for ROPC flow.');
+                    userPasswordField.focus();
+                    return;
+                }
+            }
+
+            // If OAuth with Client Secret is selected, check if Client ID and Client Secret are provided
+            if (authMethodSelect.value === 'oauth-client-secret') {
+                if (clientId === '') {
+                    const clientIdField = document.getElementById('clientId');
+                    alert('Please provide your Client ID for OAuth with Client Secret.');
+                    clientIdField.focus();
+                    return;
+                }
+
+                if (clientSecret === '') {
+                    const clientSecretField = document.getElementById('clientSecret');
+                    alert('Please provide your Client Secret for OAuth with Client Secret.');
+                    clientSecretField.focus();
+                    return;
+                }
+            }
+
+
+
+
+
+            if (permissionModeSelect.value === 'custom') {
+                formData.append('customPermissions', selectedPermissionIds.join(',')); // Correct usage of selectedPermissionIds
+            } else if (permissionModeSelect.value === 'low-impact') {
+                lowImpact = true;
+                formData.append('lowImpact', lowImpact);
+            } else if (permissionModeSelect.value === 'default') {
+                isDefaultPermissions = true;
+                formData.append('isDefaultPermissions', isDefaultPermissions);
+            }
+
+            // Close the current modal
+            closeCurrentModal();
+            
+            // Make a POST request to run the Python script in the background
+            fetch('partials/run_app_registration.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                return response.text().then(text => {
+                    try {
+                        return JSON.parse(text);
+                    } catch (error) {
+                        console.error('Failed to parse JSON, raw response:', text);
+                        throw error;
+                    }
+                });
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    const output = data.output;
+
+                    // Extract Application (client) ID
+                    const clientIdMatch = output.match(/Application \(client\) ID:\s*([a-zA-Z0-9-]+)/);
+                    const clientId = clientIdMatch ? clientIdMatch[1] : 'Not found';
+
+                    // Extract Client Secret
+                    const clientSecretMatch = output.match(/Client Secret:\s*([a-zA-Z0-9-_.~]+)/);
+                    const clientSecret = clientSecretMatch ? clientSecretMatch[1] : 'Not found';
+
+                    // Open a new modal with the Client ID and Client Secret
+                    openClientCredentialsModal(clientId, clientSecret);
+                } else if (data.status === 'error') {
+                    let errorMessage = '';
+
+                     // Extract and display the ValueError message if it exists
+                    const valueErrorMessage = data.errors.match(/ValueError:([^\n]*)/);
+                    if (valueErrorMessage && valueErrorMessage[1]) {
+                        errorMessage += 'ValueError: ' + valueErrorMessage[1].trim() + '\n';
+                    }
+
+                    // Extract and display the Exception message if it exists
+                    const exceptionMessage = data.errors.match(/Exception:([^\n]*)/);
+                    if (exceptionMessage && exceptionMessage[1]) {
+                        errorMessage += 'Exception: ' + exceptionMessage[1].trim() + '\n';
+                    } 
+                    
+                    if (errorMessage) {
+                        alert(errorMessage);
+                    } else {
+                        alert('An error occurred while processing request. Please check command.log for more details.');
+                    }
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert("An error occurred while processing request. Please check command.log for more details.");
+            });
+        });
+    </script>
+</body>
+</html>
