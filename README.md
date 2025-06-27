@@ -266,8 +266,8 @@ optional arguments:
 ### [Initial Access Attack in Azure – Understanding and Executing the Illicit Consent Grant Attack in 2025](https://www.alteredsecurity.com/post/initial-access-attack-in-azure-understanding-and-executing-the-illicit-consent-grant-attack-in-202) 
 Blog post for the new version of 365-stealder, which is a ground-up rewrite of the older one. This post explores how Illicit Consent Grant (ICG) attack works in Microsoft 365.
 
-#### [Introduction to 365-Stealer](https://www.alteredsecurity.com/post/introduction-to-365-stealer)
-The old blog post.
+The old blog post - [Introduction to 365-Stealer](https://www.alteredsecurity.com/post/introduction-to-365-stealer)
+
 
 ## Bugs and Feature Requests
 
